@@ -18,6 +18,7 @@ API families covered in the initial curated catalog:
 - Common table endpoints for ITSM, CMDB, identity, metadata, audit, journal, knowledge, and attachments
 - Common platform/application table aliases generated from the documented Table API pattern
 - Additional REST API families surfaced by the ServiceNow Developer API reference bundle
+- Full Zurich REST API family index from `https://developer.servicenow.com/api/snc/api_index_data?release=zurich&apiType=rest`
 
 ## Review Rules
 

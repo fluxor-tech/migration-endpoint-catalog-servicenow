@@ -11,3 +11,4 @@
 - Added generated common table catalog with 350 concrete Table API aliases across 70 common ServiceNow tables.
 - Added global duplicate endpoint ID validation.
 - Added official REST API family catalog with 25 additional endpoints/families surfaced by the ServiceNow Developer reference.
+- Added generated Zurich REST API family index with 121 official ServiceNow API families from the Developer reference.

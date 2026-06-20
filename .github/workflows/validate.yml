@@ -16,8 +16,9 @@ jobs:
         run: pip install pyyaml
       - name: Validate catalog
         run: python tools/validate_catalog.py
+      - name: Generate official API family index
+        run: python tools/generate_official_api_family_index.py
       - name: Export indexes
         run: python tools/export_catalog_indexes.py
       - name: Ensure indexes are committed
         run: git diff --exit-code
-

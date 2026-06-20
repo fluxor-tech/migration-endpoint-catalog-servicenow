@@ -1,0 +1,682 @@
+vendor: ServiceNow
+product: ServiceNow Platform
+api_family: ServiceNow REST API Family Index
+official_docs:
+  root: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest
+  source: sources/servicenow-rest-api-index-zurich.json
+catalog_status: active
+release: zurich
+last_reviewed: '2026-06-20'
+generation:
+  source: official_developer_reference_api_index
+  api_family_count: 121
+api_families:
+- id: account-api
+  title: Account API
+  description: The Account API provides endpoints to retrieve Customer Service Management (CSM) account records.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/account-api
+  status: official_indexed
+- id: actsub-api
+  title: ActivitySubscriptions API
+  description: The ActivitySubscriptions API provides endpoints to retrieve Activity entities from the Subscriptions and Activity Feed Framework.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/actsub-api
+  status: official_indexed
+- id: agnt_clnt_cll-api
+  title: Agent Client Collector API
+  description: The Agent Client Collector API provides endpoints to manage actions on available agents and managing policies.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/agnt_clnt_cll-api
+  status: official_indexed
+- id: agent-mapping-api
+  title: Agent Mapping API
+  description: The Agent Mapping API provides an endpoint to map external agent IDs from Contact Center as a Service (CCaaS) systems to internal
+    agent IDs in the ServiceNow AI Platform.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/agent-mapping-api
+  status: official_indexed
+- id: c_AggregateAPI
+  title: Aggregate API
+  description: The Aggregate API provides endpoints that allow you to compute aggregate statistics about existing table and column data.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/c_AggregateAPI
+  status: official_indexed
+- id: ai-assets-api
+  title: AI Assets API
+  description: AI Assets API provides endpoints to retrieve, update, and create several types of AI assets, such as systems, data sets, prompts,
+    and models.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/ai-assets-api
+  status: official_indexed
+- id: ext-user-mapping-api
+  title: AI Search External User Mapping API
+  description: "The AI Search External User Mapping API provides endpoints that enable ingestion of user mapping information from external sources\
+    \ into the ServiceNow\xAE AI Search application's index."
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/ext-user-mapping-api
+  status: official_indexed
+- id: alarm-open-api
+  title: Alarm Management Open API
+  description: The Alarm Management Open API provides endpoints to create, update, and retrieve data from the Events [em_event] and Alert [em_alert]
+    tables.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/alarm-open-api
+  status: official_indexed
+- id: ap-invoice-api
+  title: AP Invoice API
+  description: Allows external systems, such as those used by vendors, to securely submit invoices directly into an accounts payable system in
+    a structured and automated manner.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/ap-invoice-api
+  status: official_indexed
+- id: application-service-api
+  title: Application Service API
+  description: The Application Service API provides endpoints that enable you to create, modify, and update application services.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/application-service-api
+  status: official_indexed
+- id: appointment-api
+  title: Appointment API
+  description: The Appointment API provides endpoints for interacting with the appointment booking application. Use this API to book and reschedule
+    appointments, check available appointment slots, and fetch appointment booking configuration details.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/appointment-api
+  status: official_indexed
+- id: appointment-open-api
+  title: Appointment Open API
+  description: The Appointment Open API is a telecommunication API that allows you to interact with the appointment booking application. Use this
+    API to book appointments and search available time slots.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/appointment-open-api
+  status: official_indexed
+- id: c_AttachmentAPI
+  title: Attachment API
+  description: The Attachment API provides endpoints that allow you to upload and query file attachments.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/c_AttachmentAPI
+  status: official_indexed
+- id: auto-api
+  title: Automation Center API
+  description: The Automation Center API provides endpoints to create and update data related to robots, processes, and execution jobs. By leveraging
+    this API, you can integrate and reflect details from your automation workflows into the Automation Center dashboard.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/auto-api
+  status: official_indexed
+- id: agent-api
+  title: AWA Agent API
+  description: The AWA (Advanced Work Assignment) Agent API provides endpoints to manage agent presence, channel availability, and workload.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/agent-api
+  status: official_indexed
+- id: awa-agent-consult-api
+  title: AWA Agent Consult API
+  description: Handles agent consult work items.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/awa-agent-consult-api
+  status: official_indexed
+- id: awa-inbox-actions-api
+  title: AWA Inbox Actions API
+  description: The AWA Inbox Actions API provides endpoints to accept or reject a work item on behalf of an agent. This API also retrieves reject
+    reasons for rejected work items.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/awa-inbox-actions-api
+  status: official_indexed
+- id: awa_manual_assign-api
+  title: AWA Manual Assignment API
+  description: The AWA Manual Assignment API provides an endpoint to manually assign available work items to available Advanced Work Assignment
+    (AWA) agents.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/awa_manual_assign-api
+  status: official_indexed
+- id: awa-offer-work-api
+  title: AWA Offer Work API
+  description: The AWA Offer Work API provides an endpoint to assign or transfer work items to agents.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/awa-offer-work-api
+  status: official_indexed
+- id: queue-api
+  title: AWA Routing API
+  description: The AWA Routing API provides endpoints to route a document to a queue.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/queue-api
+  status: official_indexed
+- id: batch-api
+  title: Batch API
+  description: The Batch API provides endpoints to send a single request containing multiple REST API calls, and returns a stream of response
+    payloads.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/batch-api
+  status: official_indexed
+- id: case-api
+  title: Case API
+  description: The Case API provides endpoints that enable you to retrieve and update Customer Service Management (CSM) case records.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/case-api
+  status: official_indexed
+- id: cccif-api
+  title: CCCIF Media Resource API
+  description: The Custom Chat Chatbot Interoperability Framework (CCCIF) Media Resource API provides endpoints that enable a primary bot to upload
+    attachments to the associated ServiceNow instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cccif-api
+  status: official_indexed
+- id: applications-api
+  title: CdmApplicationsApi
+  description: The CdmApplicationsApi provides endpoints that enable you to uploadzoominsoftware.io/utah-devops/ configuration data to the component,
+    collection, deployable, and component variable folders found in the DevOps Config Workspace UI. It also has endpoints that enable you to export
+    deployable configuration data to your DevOps pipeline and manage shared components and shared applications.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/applications-api
+  status: official_indexed
+- id: changesets-api
+  title: CdmChangesetsApi
+  description: The CdmChangesetsApi provides endpoints that enable you to manage changesets.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/changesets-api
+  status: official_indexed
+- id: editor-api
+  title: CdmEditorApi
+  description: The CdmEditorApi provides endpoints that enable you to create nodes, update nodes, include existing nodes under other nodes, delete
+    nodes, and retrieve nodes and node includes.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/editor-api
+  status: official_indexed
+- id: policies-api
+  title: CdmPoliciesApi
+  description: The CdmPoliciesApi provides endpoints that enable you to manage policy mappings of deployables in Configuration Data Management
+    (CDM). Policies that are properly mapped to a deployable are executed when a snapshot of the deployable is validated.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/policies-api
+  status: official_indexed
+- id: shared_libraries-api
+  title: CdmSharedLibraryApi
+  description: The CdmSharedLibraryApi provides endpoints that enable you to create and manage shared libraries and shared components. It also
+    has endpoints that enable you to upload and export the configuration data of a shared component.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/shared_libraries-api
+  status: official_indexed
+- id: snapshot-api
+  title: CdmSnapshotApi
+  description: The CdmSnapshotApi provides endpoints that enable you to publish, unpublish, and re-validate snapshots in Configuration Data Management
+    (CDM).
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/snapshot-api
+  status: official_indexed
+- id: versions-api
+  title: CdmVersionApi
+  description: The CdmVersionApi provides endpoints that enable you to publish, unpublish, and export versions (snapshots) in Configuration Data
+    Management (CDM) for shared components under shared libraries.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/versions-api
+  status: official_indexed
+- id: change-management-api
+  title: Change Management API
+  description: The Change Management API provides endpoints that enable third-party application integration with the ServiceNow Change Management
+    process.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/change-management-api
+  status: official_indexed
+- id: ci-lifecycle-management-api
+  title: CI Lifecycle Management API
+  description: The CI Lifecycle Management API provides endpoints to manipulate configuration item (CI) operational states and apply CI actions.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/ci-lifecycle-management-api
+  status: official_indexed
+- id: cloudrunner-testgeneration-api
+  title: Cloud Runner Test Generation REST API
+  description: Manages test job generation to be executed in a cloud runner for Automated Test Framework (ATF).
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cloudrunner-testgeneration-api
+  status: official_indexed
+- id: cloudrunner-testrunner-api
+  title: Cloud Runner Test Runner REST API
+  description: Manages tests to be executed in a cloud runner for Automated Test Framework (ATF).
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cloudrunner-testrunner-api
+  status: official_indexed
+- id: cloudrunner-testuser-api
+  title: Cloud Runner Test User REST API
+  description: Manages test user jobs to be executed in a cloud runner for Automated Test Framework (ATF).
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cloudrunner-testuser-api
+  status: official_indexed
+- id: cs-catalog-api
+  title: Cloud Services Catalog API
+  description: The Cloud Services Catalog API provides methods related to Day-1 (provisioning) and Day-2 (modification) operations available in
+    the Cloud Services Catalog, such as creating cloud service stacks and calling resource operation requests. You can also retrieve information
+    about catalog requests, stacks getting status, and other information.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cs-catalog-api
+  status: official_indexed
+- id: cmdb-ingest-api
+  title: CMDB Data Ingestion API
+  description: The CMDB Data Ingestion API provides endpoints that enable the batch ingestion of an array of objects into an Import Set table.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cmdb-ingest-api
+  status: official_indexed
+- id: cmdb-instance-api
+  title: CMDB Instance API
+  description: The CMDB Instance API provides endpoints to create, read, update, and delete operations on existing Configuration Management Database
+    (CMDB) tables. You can only insert, update, or delete one record at a time.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cmdb-instance-api
+  status: official_indexed
+- id: cmdb-meta-api
+  title: CMDB Meta API
+  description: The CMDB Meta API provides endpoints to obtain meta data on a Configuration Management Database (CMDB) class.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cmdb-meta-api
+  status: official_indexed
+- id: consumer-api
+  title: Consumer API
+  description: The Consumer API provides endpoints to retrieve and update Customer Service Management (CSM) consumer records.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/consumer-api
+  status: official_indexed
+- id: contact-api
+  title: Contact API
+  description: The Contact API provides endpoints that enable you to retrieve and update Customer Service Management (CSM) contact records.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/contact-api
+  status: official_indexed
+- id: cicd-update-set-api
+  title: Continuous Integration and Continuous Delivery (CICD) Update Set API
+  description: The CICD Update Set API provides methods to create, retrieve, preview, commit, and back-out an update set.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cicd-update-set-api
+  status: official_indexed
+- id: cicd-api
+  title: Continuous Integration/Continuous Delivery (CICD) API
+  description: The CICD API provides endpoints that enable integration with common DevOps tools for building pipelines. These tools include Jenkins,
+    Azure Pipelines, GitLab, GitHub Actions, Atlassian Bamboo/Pipelines, and more.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cicd-api
+  status: official_indexed
+- id: conversation-member-api
+  title: Conversation Member API
+  description: "The Conversation Member API provides methods for changing a specific agent\u2019s member state to removed or updated in a given\
+    \ Agent Chat conversation."
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/conversation-member-api
+  status: official_indexed
+- id: attachment_csm-api
+  title: CSM Attachment API
+  description: The CSM Attachment API provides endpoints that allow both internal and external users to upload, download, and remove attachments
+    associated with a table and to retrieve attachment metadata.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/attachment_csm-api
+  status: official_indexed
+- id: csm-pricing-api
+  title: CSM Pricing API
+  description: The CSM Pricing API provides methods to calculate prices for transaction lines containing products.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/csm-pricing-api
+  status: official_indexed
+- id: cti-api
+  title: CTI API
+  description: The CTI API provides endpoints that enable Computer Telephony Integration (CTI) providers to interact with the Cloud Call Center
+    framework.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cti-api
+  status: official_indexed
+- id: cust_central-api
+  title: Customer Central API
+  description: The Customer Central API provides endpoints to access customer information and configuration details.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/cust_central-api
+  status: official_indexed
+- id: data-classification-api
+  title: Data Classification API
+  description: The Data Classification API provides endpoints to group data by type.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/data-classification-api
+  status: official_indexed
+- id: dcim-metric-data-feed-api
+  title: DCIM Metric Data Feed API
+  description: The DCIM Metric Data Feed API provides an endpoint to accept Data Center Infrastructure Management (DCIM) metric data from an external
+    system and store the data in a MetricBase database.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/dcim-metric-data-feed-api
+  status: official_indexed
+- id: devops-api
+  title: DevOps API
+  description: The DevOps API provides endpoints that enable the interaction with external DevOps tools.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/devops-api
+  status: official_indexed
+- id: devops-config-api
+  title: DevOps Config API
+  description: The DevOps Config API provides endpoints to manage your applications.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/devops-config-api
+  status: official_indexed
+- id: digital-product-release-api
+  title: Digital Product Release API
+  description: The Digital Product Release API provides endpoints to manage releases and policy compliance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/digital-product-release-api
+  status: official_indexed
+- id: email-api
+  title: Email API
+  description: The Email API provides endpoints that enable you to receive and send email messages using REST.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/email-api
+  status: official_indexed
+- id: entitlement-api
+  title: Entitlement API
+  description: The Entitlement API provides endpoints to create and retrieve entitlement records from an instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/entitlement-api
+  status: official_indexed
+- id: event_management_topic-api
+  title: Event Management Topic Open API
+  description: The Event Management Topic Open API provides an endpoint that enables you to send a topic through your message broker and store
+    it on a ServiceNow instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/event_management_topic-api
+  status: official_indexed
+- id: event_open-api
+  title: Event Notification Management Open API
+  description: The Event Notification Management Open API provides an endpoint to create, update, and delete events from the Events [em_event]
+    table.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/event_open-api
+  status: official_indexed
+- id: external-content-ingestion-api
+  title: External Content Ingestion API
+  description: "The External Content Ingestion API provides endpoints that enable ingestion of content from sources outside of your ServiceNow\xAE\
+    \ instance into the ServiceNow\xAE AI Search application's index."
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/external-content-ingestion-api
+  status: official_indexed
+- id: external-id-mapping-api
+  title: External ID Mapping API
+  description: Enables external Contact Center as a Service (CCaaS) platforms to store and retrieve routing identifiers for ServiceNow records.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/external-id-mapping-api
+  status: official_indexed
+- id: hr-core-api
+  title: HR REST API
+  description: The HR REST API provides endpoints that return information about employees that work or live in the United States.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/hr-core-api
+  status: official_indexed
+- id: c_IdentifyReconcileAPI
+  title: Identification and Reconciliation API
+  description: The Identification and Reconciliation API provides endpoints that use the Identification and Reconciliation engine (IRE) to minimize
+    creation of duplicate Configuration Items (CIs) and to reconcile CI attributes by only accepting information from authorized sources when
+    updating the Configuration Management Database (CMDB).
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/c_IdentifyReconcileAPI
+  status: official_indexed
+- id: c_ImportSetAPI
+  title: Import Set API
+  description: The Import Set API provides endpoints that allow you to interact with import set tables.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/c_ImportSetAPI
+  status: official_indexed
+- id: integrations-api
+  title: Install Base Item API
+  description: The Install Base Item API provides endpoints to access and manage install base items records within a ServiceNow instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/integrations-api
+  status: official_indexed
+- id: knowledge-api
+  title: Knowledge Management REST API
+  description: The Knowledge Management API provides endpoints for searching, viewing, and fetching lists of the most-viewed and featured knowledge
+    articles.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/knowledge-api
+  status: official_indexed
+- id: lead-api
+  title: lead API
+  description: The lead API provides endpoints that enable you to create, update, and query/retrieve marketing leads and their associated lead
+    line items from an instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/lead-api
+  status: official_indexed
+- id: Clotho-Time-Series-API
+  title: MetricBase Time Series API
+  description: The MetricBase Time Series API provides endpoints to insert data into, retrieve information from, and to run transforms against
+    a MetricBase database.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/Clotho-Time-Series-API
+  status: official_indexed
+- id: omichannel-callback-api
+  title: Omnichannel Callback API
+  description: The Omnichannel Callback API provides methods for creating, updating, and initiating a callback request for live agent conversations.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/omichannel-callback-api
+  status: official_indexed
+- id: openframe-api
+  title: openframe API
+  description: The openframe API provides endpoints that provide Contact Center as a Service (CCaaS) the ability to create and update interaction
+    records without using the Operation Handler.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/openframe-api
+  status: official_indexed
+- id: order_csm-api
+  title: Order API
+  description: The Order API provides endpoints for retrieving and creating orders with order line items for the Customer Service Management application.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/order_csm-api
+  status: official_indexed
+- id: tmf-party-management-open-api
+  title: Party Management Open API
+  description: The Party Management Open API provides endpoints for managing parties with a relationship to the enterprise, like a consumer, account,
+    or contact. Use this API to create, update, and retrieve data from the Consumer [csm_consumer], Account [customer_account], and Contact [customer_contact]
+    tables.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/tmf-party-management-open-api
+  status: official_indexed
+- id: agent-intelligence-api
+  title: Predictive Intelligence API
+  description: The Predictive Intelligence API provides endpoints that predict a field value based on one or more input fields and a trained solution.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/agent-intelligence-api
+  status: official_indexed
+- id: proactive-engagement-api
+  title: Proactive Engagement API
+  description: The Proactive Engagement API provides an endpoint for creating digital experience issues.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/proactive-engagement-api
+  status: official_indexed
+- id: product-catalog-open-api
+  title: Product Catalog Open API
+  description: The Product Catalog Open API provides endpoints to create and retrieve product catalogs, product offerings, and product specifications.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/product-catalog-open-api
+  status: official_indexed
+- id: product-inventory-open-api
+  title: Product Inventory Open API
+  description: The Product Inventory Open API provides endpoints to create and retrieve product inventories.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/product-inventory-open-api
+  status: official_indexed
+- id: tmf622_product_ordering-api
+  title: Product Order Open API
+  description: The Product Order Open API provides endpoints that enable a standardized mechanism for placing product orders.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/tmf622_product_ordering-api
+  status: official_indexed
+- id: ppm-api
+  title: Project Portfolio Management API
+  description: The Project Portfolio Management API provides endpoints to bulk import cost plans and project tasks.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/ppm-api
+  status: official_indexed
+- id: pushinstallation-api
+  title: Push Installation API
+  description: The Push Installation API provides endpoints to register and unregister the tokens that enable mobile devices to receive push notifications
+    from an application.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/pushinstallation-api
+  status: official_indexed
+- id: push-metrics-MID-server
+  title: Push Metrics API
+  description: The Push Metrics API provides endpoints that enable you to push raw Metric Intelligence data from an external source to the MID
+    Server.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/push-metrics-MID-server
+  status: official_indexed
+- id: quote-management-api
+  title: Quote Management API
+  description: The Quote Management API provides endpoints to create, update, and retrieve customer quote data.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/quote-management-api
+  status: official_indexed
+- id: remote_help_request-api
+  title: Remote help request API
+  description: The Remote help request API provides endpoints to create, view, and fetch lists of IT service requests and their details from an
+    electronic medical record (EMR) system. An IT service request is associated with a task type such as an incident in the ServiceNow instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/remote_help_request-api
+  status: official_indexed
+- id: resource-inventory-api
+  title: Resource Inventory Open API
+  description: The Resource Inventory Open API provides endpoints to create, retrieve, and delete resources.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/resource-inventory-api
+  status: official_indexed
+- id: response-templates-api
+  title: Response Templates API
+  description: The Response Templates API provides endpoints to handle records in the Response Templates [sn_templated_snip_note_template] table.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/response-templates-api
+  status: official_indexed
+- id: sales_agreement-api
+  title: Sales Agreement API
+  description: The Sales Agreement API provides methods for creating a new sales agreement and retrieving an existing sales agreement of a given
+    sys_id.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/sales_agreement-api
+  status: official_indexed
+- id: sam_soft_us_int-api
+  title: SAM-Software Usage Data Integration API
+  description: The SAM-Software Usage Data Integration API provides endpoints to create and update records in the Software Usage [samp_sw_usage]
+    table.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/sam_soft_us_int-api
+  status: official_indexed
+- id: c_PerformanceAnalyticsAPI
+  title: Scorecards API
+  description: The Scorecards API provides endpoints that enable you to query data about Performance Analytics indicators. The query parameters
+    equate to the functions available on the Analytics Hub for drilling down into an indicator.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/c_PerformanceAnalyticsAPI
+  status: official_indexed
+- id: scriptdebugger-api
+  title: Script Debugger API
+  description: The Script Debugger API provides endpoints to debug lines of server-side JavaScript code, such as business rules and script includes.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/scriptdebugger-api
+  status: official_indexed
+- id: c_ServiceCatalogAPI
+  title: Service Catalog API
+  description: The Service Catalog API provides endpoints that access Service Catalog configuration and actions from within a Service Portal.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/c_ServiceCatalogAPI
+  status: official_indexed
+- id: service-catalog-open-api
+  title: Service Catalog Open API
+  description: The Service Catalog Open API provides endpoints to create, update, retrieve, and delete service specifications and service categories.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/service-catalog-open-api
+  status: official_indexed
+- id: servicecontract-api
+  title: Service Contract API
+  description: The Service Contract API provides endpoints to create and retrieve service contract records.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/servicecontract-api
+  status: official_indexed
+- id: service-order-open-api
+  title: Service Order Open API
+  description: The Service Order Open API provides endpoints that enable a standardized mechanism for placing service orders.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/service-order-open-api
+  status: official_indexed
+- id: service-test-management-api
+  title: Service Test Management Open API
+  description: The Service Test Management Open API provides endpoints to create and retrieve service test definitions and service tests.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/service-test-management-api
+  status: official_indexed
+- id: sg_services-api
+  title: SG Services API
+  description: The SG Services API provides endpoints to create and manage application services and the upstream relationships between them.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/sg_services-api
+  status: official_indexed
+- id: spendint-api-spo
+  title: SpendInt APIs
+  description: SpendInt APIs are inbound REST APIs that enable external procurement systems to send catalog, pricing, order, shipment, and invoice
+    data into ServiceNow Sourcing and Procurement Operations, synchronizing structured procurement data from third-party systems.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/spendint-api-spo
+  status: official_indexed
+- id: synth-async-api
+  title: SyntheticsAsyncBulkCreate API
+  description: The SyntheticsAsyncBulkCreate API provides endpoints to manage asynchronous synthetic monitor creation.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/synth-async-api
+  status: official_indexed
+- id: scim-api
+  title: System for Cross-domain Identity Management (SCIM) API
+  description: The System for Cross-domain Identity Management (SCIM) API provides endpoints to create, read, update, and delete operations on
+    users and groups using the SCIM protocol.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/scim-api
+  status: official_indexed
+- id: c_TableAPI
+  title: Table API
+  description: The Table API provides endpoints that allow you to perform create, read, update, and delete (CRUD) operations on existing tables.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/c_TableAPI
+  status: official_indexed
+- id: ts-qualification-api
+  title: Technical Service Qualification Open API
+  description: The Technical Service Qualification Open API provides endpoints to check the availability of resources and services before submitting
+    orders for fulfillment.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/ts-qualification-api
+  status: official_indexed
+- id: tisc-api
+  title: TISC API
+  description: The TISC API provides endpoints to add and retrieve threat intelligence data in the Threat Intelligence Security Center (TISC)
+    application.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/tisc-api
+  status: official_indexed
+- id: tisc-intel-ex-api
+  title: TISC Intel Exchange API
+  description: Enables external systems to share threat intelligence data with the Threat Intelligence Security Center (TISC) application.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/tisc-intel-ex-api
+  status: official_indexed
+- id: tisc-rpz-api
+  title: TISC RPZ API
+  description: The TISC RPZ API provides an endpoint to export domains and IP addresses in Response Policy Zone (RPZ) format.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/tisc-rpz-api
+  status: official_indexed
+- id: taxii-server-api
+  title: TISC TAXII Server API
+  description: Provides Trusted Automated Exchange of Intelligence Information (TAXII) server endpoints for sharing threat intelligence data in
+    Threat Intelligence Security Center (TISC) from one ServiceNow instance to another.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/taxii-server-api
+  status: official_indexed
+- id: trouble-ticket-open-api
+  title: Trouble Ticket Open API
+  description: The Trouble Ticket Open API provides endpoints to create, update, and retrieve data from the Case [sn_customerservice_case], Incident
+    [incident], and Service Problem Case [sn_sprb_mgmt_case] tables.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/trouble-ticket-open-api
+  status: official_indexed
+- id: user-role-inheritance-api
+  title: User Role Inheritance API
+  description: The User Role Inheritance API provides endpoints that allow you to see the roles that a specific user inherited.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/user-role-inheritance-api
+  status: official_indexed
+- id: verifyentitlements-api
+  title: Verify Entitlements API
+  description: The Verify Entitlements API provides endpoints that enable you to obtain a list of valid entitlements, details about the characteristics
+    of entitlements, and an entitlement's latest usage information.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/verifyentitlements-api
+  status: official_indexed
+- id: bot-api
+  title: Virtual Agent Bot Integration API
+  description: The Virtual Agent Bot Integration API provides endpoints that allow users to integrate any chat interface or a bot ecosystem with
+    the ServiceNow Virtual Agent and/or Live Agent.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/bot-api
+  status: official_indexed
+- id: voice-interaction-resource-api
+  title: Voice Interaction Resource API
+  description: The Voice Interaction API provides endpoints to transcribe and store voice interactions between agents and callers during a telephone
+    conversation. It works in conjunction with Virtual Agent and Live Agent chats.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/voice-interaction-resource-api
+  status: official_indexed
+- id: work-order-mgmt-api
+  title: Work Order Management API
+  description: The Work Order Management API provides endpoints to create, update, and retrieve work orders.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/work-order-mgmt-api
+  status: official_indexed
+- id: workplace_connector_webhook-api
+  title: Workplace Connector Webhook API
+  description: The Workplace Connector Webhook API is a generic interface that enables data from different kinds of workplace hardware or sensors
+    (such as badging systems or occupancy sensors) to be stored in Workplace Service Delivery tables.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/workplace_connector_webhook-api
+  status: official_indexed
+- id: wrap-up-api
+  title: Wrap Up API
+  description: Provides endpoints for managing wrap-up functionality for external Contact Center as a Service (CCaaS) systems or ServiceNow AI
+    Platform workspaces.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wrap-up-api
+  status: official_indexed
+- id: wsd_extra_service-api
+  title: WSD Extra Service API
+  description: The Workplace Service Delivery (WSD) Extra Service API provides endpoints to retrieve extra services, such as location layouts
+    and standard services of a workplace location.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_extra_service-api
+  status: official_indexed
+- id: wsd_extra_serv_req-api
+  title: WSD Extra Service Request API
+  description: The Workplace Service Delivery (WSD) Extra Service Request API provides endpoints to manage extra service requests for reservations.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_extra_serv_req-api
+  status: official_indexed
+- id: wsd_grp_reserv-api
+  title: WSD Group Reservation API
+  description: The Workplace Service Delivery (WSD) Group Reservation API provides endpoints for managing group reservations.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_grp_reserv-api
+  status: official_indexed
+- id: wsd_multi_reserv-api
+  title: WSD Multi Reservation API
+  description: The Workplace Service Delivery (WSD) Multi Reservation API provides endpoints for managing reservations with multiple workplace
+    locations.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_multi_reserv-api
+  status: official_indexed
+- id: wsd_recur_reserv-api
+  title: WSD Recurring Reservation API
+  description: The Workplace Service Delivery (WSD) Recurring Reservation API provides endpoints for managing reservations that occur at the same
+    time, but have different dates.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_recur_reserv-api
+  status: official_indexed
+- id: wsd_reservable-api
+  title: WSD Reservable API
+  description: The Workplace Service Delivery (WSD) Reservable API provides endpoints to retrieve details of a reservable, an entity that can
+    be reserved, such as a workplace location, from a ServiceNow instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_reservable-api
+  status: official_indexed
+- id: wsd_reservable_module-api
+  title: WSD Reservable Module API
+  description: The Workplace Service Delivery (WSD) Reservable Module API provides endpoints to retrieve details of a reservable module from a
+    ServiceNow instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_reservable_module-api
+  status: official_indexed
+- id: wsd_reservable-api-V2
+  title: WSD Reservable V2 API
+  description: The Workplace Service Delivery (WSD) Reservable V2 API provides endpoints to retrieve details of a reservable, an entity that can
+    be reserved, such as a workplace location, from a ServiceNow instance.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_reservable-api-V2
+  status: official_indexed
+- id: wsd_reservation-api
+  title: WSD Reservation API
+  description: The Workplace Service Delivery (WSD) Reservation API provides endpoints for managing workplace reservations.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_reservation-api
+  status: official_indexed
+- id: wsd_reservation_invitees-api
+  title: WSD Reservation Invitees API
+  description: The Workplace Service Delivery (WSD) Reservation Invitees API provides endpoints to add invitees to reservations, fetch invitees
+    of a reservation, and reassign invitees of a reservation.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_reservation_invitees-api
+  status: official_indexed
+- id: wsd_search-api
+  title: WSD Search API
+  description: The Workplace Service Delivery (WSD) Search API provides endpoints to search for available locations and workplace items such as
+    reservables, reservable modules, and available shifts.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_search-api
+  status: official_indexed
+- id: wsd_shift-api
+  title: WSD Shift API
+  description: The Workplace Service Delivery (WSD) Shift API provides an endpoint that returns shift time spans for a specified date and time.
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api/zurich/rest/wsd_shift-api
+  status: official_indexed

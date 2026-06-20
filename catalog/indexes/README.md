@@ -1,6 +1,7 @@
 # ServiceNow Endpoint Catalog Index
 
 Total endpoints: 421
+Official REST API families: 121
 
 ## By API Group
 
@@ -47,5 +48,7 @@ Total endpoints: 421
 
 ## Files
 
-- `all-endpoints.csv`: flat index for spreadsheet filtering.
+- `all-endpoints.csv`: flat endpoint index for spreadsheet filtering.
+- `official-api-families.csv`: official ServiceNow REST API family index.
 - `../servicenow-core-platform.yml`: curated ServiceNow platform catalog.
+- `../servicenow-official-api-families.yml`: generated official REST API family index.

@@ -11,9 +11,20 @@ REQUIRED_ENDPOINT = {"id", "status", "method", "path", "summary", "operation_cat
 def main():
     json.loads(Path("schemas/endpoint.schema.json").read_text(encoding="utf-8"))
     total = 0
+    family_total = 0
     global_ids = {}
     for path in sorted(Path("catalog").glob("*.yml")):
         data = yaml.safe_load(path.read_text(encoding="utf-8"))
+        if "api_families" in data:
+            ids = [family["id"] for family in data["api_families"]]
+            if len(ids) != len(set(ids)):
+                raise SystemExit(f"{path}: duplicate api family ids")
+            expected = data.get("generation", {}).get("api_family_count")
+            if expected is not None and expected != len(ids):
+                raise SystemExit(f"{path}: generation.api_family_count={expected}, actual={len(ids)}")
+            family_total += len(ids)
+            print(f"{path}: {len(ids)} API families")
+            continue
         missing = REQUIRED_ROOT - set(data)
         if missing:
             raise SystemExit(f"{path}: missing root keys {sorted(missing)}")
@@ -34,6 +45,7 @@ def main():
         total += len(ids)
         print(f"{path}: {len(ids)} endpoints")
     print(f"total: {total} endpoints")
+    print(f"api families: {family_total}")
 
 
 if __name__ == "__main__":
