@@ -1,0 +1,9 @@
+PATCH https://example.service-now.com/api/now/table/incident/00000000000000000000000000000000
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer <access_token>
+
+{
+  "short_description": "Updated by integration"
+}
+

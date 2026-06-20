@@ -1,0 +1,4 @@
+GET https://example.service-now.com/api/now/table/incident?sysparm_query=active=true&sysparm_fields=sys_id,number,short_description,state,assigned_to&sysparm_limit=100
+Accept: application/json
+Authorization: Bearer <access_token>
+

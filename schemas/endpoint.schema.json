@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/fluxor-tech/migration-endpoint-catalog-servicenow/schemas/endpoint.schema.json",
+  "title": "Endpoint Catalog",
+  "type": "object",
+  "required": ["vendor", "product", "api_family", "base_url_template", "official_docs", "catalog_status", "last_reviewed", "endpoints"],
+  "properties": {
+    "vendor": { "type": "string" },
+    "product": { "type": "string" },
+    "api_family": { "type": "string" },
+    "base_url_template": { "type": "string" },
+    "official_docs": {
+      "type": "object",
+      "required": ["root"],
+      "additionalProperties": { "type": "string" }
+    },
+    "catalog_status": { "type": "string", "enum": ["starter", "active", "archived"] },
+    "last_reviewed": { "type": "string" },
+    "generation": {
+      "type": "object",
+      "properties": {
+        "source": { "type": "string" },
+        "endpoint_count": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "endpoints": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/endpoint" }
+    }
+  },
+  "$defs": {
+    "endpoint": {
+      "type": "object",
+      "required": ["id", "status", "method", "path", "summary", "operation_category", "use_cases", "permissions", "official_doc_url"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+[a-z0-9-]*$" },
+        "status": { "type": "string", "enum": ["candidate", "reviewed", "validated", "deprecated"] },
+        "method": { "type": "string", "enum": ["GET", "POST", "PUT", "PATCH", "DELETE"] },
+        "path": { "type": "string", "pattern": "^/" },
+        "summary": { "type": "string" },
+        "api_group": { "type": "string" },
+        "operation_category": { "type": "string", "enum": ["read", "write", "delete", "other"] },
+        "use_cases": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "auth": { "type": "object", "additionalProperties": true },
+        "permissions": { "type": "array", "items": { "type": "string" } },
+        "parameters": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } },
+        "official_doc_url": { "type": "string" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  }
+}
+

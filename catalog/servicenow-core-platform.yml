@@ -1,0 +1,737 @@
+vendor: ServiceNow
+product: ServiceNow Platform
+api_family: ServiceNow REST APIs
+base_url_template: "https://{instance}.service-now.com"
+official_docs:
+  root: "https://developer.servicenow.com/dev.do#!/reference/api"
+  product_docs: "https://www.servicenow.com/docs/"
+catalog_status: active
+last_reviewed: "2026-06-20"
+generation:
+  source: curated_official_docs
+  endpoint_count: 46
+endpoints:
+  - id: table-get-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/{tableName}
+    summary: Query records from a table.
+    api_group: Table API
+    operation_category: read
+    use_cases:
+      - Table extraction, lookup, reporting, validation, and integration reads
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Table ACL read permission
+      - Field ACL read permission where applicable
+    parameters:
+      path: [tableName]
+      query: [sysparm_query, sysparm_fields, sysparm_limit, sysparm_offset, sysparm_display_value, sysparm_exclude_reference_link]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+    notes:
+      - This is the primary reusable endpoint family for most ServiceNow data extraction.
+
+  - id: table-create-record
+    status: reviewed
+    method: POST
+    path: /api/now/table/{tableName}
+    summary: Create a record in a table.
+    api_group: Table API
+    operation_category: write
+    use_cases:
+      - Record creation, integration writes, controlled loads, and backfills
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Table ACL create permission
+      - Field ACL write permission where applicable
+    parameters:
+      path: [tableName]
+      query: [sysparm_display_value, sysparm_exclude_reference_link, sysparm_input_display_value]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-get-record
+    status: reviewed
+    method: GET
+    path: /api/now/table/{tableName}/{sysId}
+    summary: Read a single record by sys_id.
+    api_group: Table API
+    operation_category: read
+    use_cases:
+      - Record lookup, validation, and reconciliation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Table ACL read permission
+      - Field ACL read permission where applicable
+    parameters:
+      path: [tableName, sysId]
+      query: [sysparm_fields, sysparm_display_value, sysparm_exclude_reference_link]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-update-record-put
+    status: reviewed
+    method: PUT
+    path: /api/now/table/{tableName}/{sysId}
+    summary: Replace or update a record by sys_id.
+    api_group: Table API
+    operation_category: write
+    use_cases:
+      - Full record update and target correction
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Table ACL write permission
+      - Field ACL write permission where applicable
+    parameters:
+      path: [tableName, sysId]
+      query: [sysparm_display_value, sysparm_exclude_reference_link, sysparm_input_display_value]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-update-record-patch
+    status: reviewed
+    method: PATCH
+    path: /api/now/table/{tableName}/{sysId}
+    summary: Partially update a record by sys_id.
+    api_group: Table API
+    operation_category: write
+    use_cases:
+      - Field backfill, selective updates, and operational corrections
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Table ACL write permission
+      - Field ACL write permission where applicable
+    parameters:
+      path: [tableName, sysId]
+      query: [sysparm_display_value, sysparm_exclude_reference_link, sysparm_input_display_value]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-delete-record
+    status: reviewed
+    method: DELETE
+    path: /api/now/table/{tableName}/{sysId}
+    summary: Delete a record by sys_id.
+    api_group: Table API
+    operation_category: delete
+    use_cases:
+      - Cleanup and rollback where permitted
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Table ACL delete permission
+    parameters:
+      path: [tableName, sysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: aggregate-query
+    status: reviewed
+    method: GET
+    path: /api/now/stats/{tableName}
+    summary: Query aggregate statistics for a table.
+    api_group: Aggregate API
+    operation_category: read
+    use_cases:
+      - Counts, grouping, reconciliation, reporting, and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Table ACL read permission
+    parameters:
+      path: [tableName]
+      query: [sysparm_query, sysparm_count, sysparm_avg_fields, sysparm_min_fields, sysparm_max_fields, sysparm_sum_fields, sysparm_group_by]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: attachment-upload-multipart
+    status: reviewed
+    method: POST
+    path: /api/now/attachment/upload
+    summary: Upload an attachment using multipart form data.
+    api_group: Attachment API
+    operation_category: write
+    use_cases:
+      - Attachment creation and file load
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Write access to target record
+    parameters:
+      query: [table_name, table_sys_id, file_name]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: attachment-upload-binary
+    status: reviewed
+    method: POST
+    path: /api/now/attachment/file
+    summary: Upload an attachment as binary file content.
+    api_group: Attachment API
+    operation_category: write
+    use_cases:
+      - Attachment migration and binary integration uploads
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Write access to target record
+    parameters:
+      query: [table_name, table_sys_id, file_name]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: attachment-get-metadata
+    status: reviewed
+    method: GET
+    path: /api/now/attachment/{sysId}
+    summary: Read attachment metadata.
+    api_group: Attachment API
+    operation_category: read
+    use_cases:
+      - Attachment inventory and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Read access to attachment and parent record
+    parameters:
+      path: [sysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: attachment-download-file
+    status: reviewed
+    method: GET
+    path: /api/now/attachment/{sysId}/file
+    summary: Download attachment binary content.
+    api_group: Attachment API
+    operation_category: read
+    use_cases:
+      - File extraction and attachment validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Read access to attachment and parent record
+    parameters:
+      path: [sysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: attachment-delete
+    status: reviewed
+    method: DELETE
+    path: /api/now/attachment/{sysId}
+    summary: Delete an attachment.
+    api_group: Attachment API
+    operation_category: delete
+    use_cases:
+      - Attachment cleanup and rollback
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Delete access to attachment and parent record
+    parameters:
+      path: [sysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: import-set-insert
+    status: reviewed
+    method: POST
+    path: /api/now/import/{stagingTableName}
+    summary: Insert data into an import set staging table.
+    api_group: Import Set API
+    operation_category: write
+    use_cases:
+      - Bulk loads through transform maps
+      - Controlled data ingestion
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Access to import set staging table
+      - Transform map permissions where applicable
+    parameters:
+      path: [stagingTableName]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: import-set-insert-multiple
+    status: reviewed
+    method: POST
+    path: /api/now/import/{stagingTableName}/insertMultiple
+    summary: Insert multiple records into an import set staging table.
+    api_group: Import Set API
+    operation_category: write
+    use_cases:
+      - Batch ingestion through import sets
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Access to import set staging table
+      - Transform map permissions where applicable
+    parameters:
+      path: [stagingTableName]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: batch-request
+    status: reviewed
+    method: POST
+    path: /api/now/v1/batch
+    summary: Execute multiple REST requests in a single batch.
+    api_group: Batch API
+    operation_category: write
+    use_cases:
+      - Request batching and integration optimization
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Permissions required by each batched request
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: service-catalog-get-catalogs
+    status: reviewed
+    method: GET
+    path: /api/sn_sc/servicecatalog/catalogs
+    summary: List service catalog catalogs.
+    api_group: Service Catalog API
+    operation_category: read
+    use_cases:
+      - Catalog inventory and portal integration discovery
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Service Catalog access
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: service-catalog-get-items
+    status: reviewed
+    method: GET
+    path: /api/sn_sc/servicecatalog/items
+    summary: List service catalog items.
+    api_group: Service Catalog API
+    operation_category: read
+    use_cases:
+      - Catalog item inventory and request mapping
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Service Catalog access
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: service-catalog-submit-order
+    status: reviewed
+    method: POST
+    path: /api/sn_sc/servicecatalog/items/{itemSysId}/order_now
+    summary: Submit an order for a catalog item.
+    api_group: Service Catalog API
+    operation_category: write
+    use_cases:
+      - Catalog request creation and integration ordering
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Permission to request the catalog item
+    parameters:
+      path: [itemSysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: service-catalog-add-to-cart
+    status: reviewed
+    method: POST
+    path: /api/sn_sc/servicecatalog/items/{itemSysId}/add_to_cart
+    summary: Add a catalog item to cart.
+    api_group: Service Catalog API
+    operation_category: write
+    use_cases:
+      - Cart-based catalog ordering
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Permission to request the catalog item
+    parameters:
+      path: [itemSysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: service-catalog-submit-cart
+    status: reviewed
+    method: POST
+    path: /api/sn_sc/servicecatalog/cart/submit_order
+    summary: Submit current cart as an order.
+    api_group: Service Catalog API
+    operation_category: write
+    use_cases:
+      - Multi-item catalog request creation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - Permission to submit cart items
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: cmdb-instance-create
+    status: reviewed
+    method: POST
+    path: /api/now/cmdb/instance/{className}
+    summary: Create a CMDB CI instance.
+    api_group: CMDB Instance API
+    operation_category: write
+    use_cases:
+      - CI creation and CMDB ingestion
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - CMDB class create/write permissions
+    parameters:
+      path: [className]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: cmdb-instance-read
+    status: reviewed
+    method: GET
+    path: /api/now/cmdb/instance/{className}/{sysId}
+    summary: Read a CMDB CI instance.
+    api_group: CMDB Instance API
+    operation_category: read
+    use_cases:
+      - CI lookup and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - CMDB class read permissions
+    parameters:
+      path: [className, sysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: cmdb-instance-update
+    status: reviewed
+    method: PATCH
+    path: /api/now/cmdb/instance/{className}/{sysId}
+    summary: Update a CMDB CI instance.
+    api_group: CMDB Instance API
+    operation_category: write
+    use_cases:
+      - CI updates and CMDB reconciliation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - CMDB class write permissions
+    parameters:
+      path: [className, sysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: cmdb-instance-delete
+    status: reviewed
+    method: DELETE
+    path: /api/now/cmdb/instance/{className}/{sysId}
+    summary: Delete a CMDB CI instance.
+    api_group: CMDB Instance API
+    operation_category: delete
+    use_cases:
+      - CMDB cleanup
+    auth:
+      types: [basic, oauth_2_0]
+    permissions:
+      - CMDB class delete permissions
+    parameters:
+      path: [className, sysId]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-incident-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/incident
+    summary: Query Incident records.
+    api_group: ITSM Table Alias
+    operation_category: read
+    use_cases:
+      - Incident reporting, extraction, validation, and integration
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [incident read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-problem-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/problem
+    summary: Query Problem records.
+    api_group: ITSM Table Alias
+    operation_category: read
+    use_cases:
+      - Problem reporting, extraction, validation, and integration
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [problem read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-change-request-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/change_request
+    summary: Query Change Request records.
+    api_group: ITSM Table Alias
+    operation_category: read
+    use_cases:
+      - Change reporting, extraction, validation, and integration
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [change_request read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-task-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/task
+    summary: Query Task records.
+    api_group: Platform Table Alias
+    operation_category: read
+    use_cases:
+      - Task reporting and cross-process extraction
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [task read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sc-request-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sc_request
+    summary: Query Service Catalog Request records.
+    api_group: Service Catalog Table Alias
+    operation_category: read
+    use_cases:
+      - Catalog request reporting and extraction
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sc_request read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sc-request-item-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sc_req_item
+    summary: Query Requested Item records.
+    api_group: Service Catalog Table Alias
+    operation_category: read
+    use_cases:
+      - Requested item reporting and extraction
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sc_req_item read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sc-task-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sc_task
+    summary: Query Catalog Task records.
+    api_group: Service Catalog Table Alias
+    operation_category: read
+    use_cases:
+      - Catalog task reporting and extraction
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sc_task read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-cmdb-ci-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/cmdb_ci
+    summary: Query CMDB CI records.
+    api_group: CMDB Table Alias
+    operation_category: read
+    use_cases:
+      - CMDB inventory and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [cmdb_ci read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-cmdb-rel-ci-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/cmdb_rel_ci
+    summary: Query CMDB relationship records.
+    api_group: CMDB Table Alias
+    operation_category: read
+    use_cases:
+      - CI relationship extraction and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [cmdb_rel_ci read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-user-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_user
+    summary: Query user records.
+    api_group: Identity Table Alias
+    operation_category: read
+    use_cases:
+      - User lookup, mapping, identity reporting, and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_user read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-user-group-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_user_group
+    summary: Query group records.
+    api_group: Identity Table Alias
+    operation_category: read
+    use_cases:
+      - Group lookup, mapping, reporting, and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_user_group read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-user-grmember-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_user_grmember
+    summary: Query group membership records.
+    api_group: Identity Table Alias
+    operation_category: read
+    use_cases:
+      - Group membership extraction and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_user_grmember read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-user-role-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_user_role
+    summary: Query role records.
+    api_group: Identity Table Alias
+    operation_category: read
+    use_cases:
+      - Role inventory and governance
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_user_role read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-user-has-role-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_user_has_role
+    summary: Query user-role assignment records.
+    api_group: Identity Table Alias
+    operation_category: read
+    use_cases:
+      - Role assignment inventory and validation
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_user_has_role read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-choice-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_choice
+    summary: Query choice list values.
+    api_group: Metadata Table Alias
+    operation_category: read
+    use_cases:
+      - Choice value inventory and field mapping
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_choice read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-dictionary-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_dictionary
+    summary: Query dictionary field definitions.
+    api_group: Metadata Table Alias
+    operation_category: read
+    use_cases:
+      - Field inventory, schema analysis, and table metadata discovery
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_dictionary read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-db-object-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_db_object
+    summary: Query table definitions.
+    api_group: Metadata Table Alias
+    operation_category: read
+    use_cases:
+      - Table inventory and schema discovery
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_db_object read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-audit-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_audit
+    summary: Query audit history records.
+    api_group: Audit Table Alias
+    operation_category: read
+    use_cases:
+      - Audit review, reconciliation, and change history analysis
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_audit read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-journal-field-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_journal_field
+    summary: Query journal field entries.
+    api_group: Audit Table Alias
+    operation_category: read
+    use_cases:
+      - Comments and work notes extraction
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_journal_field read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-kb-knowledge-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/kb_knowledge
+    summary: Query knowledge article records.
+    api_group: Knowledge Table Alias
+    operation_category: read
+    use_cases:
+      - Knowledge inventory and content extraction
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [kb_knowledge read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: table-sys-attachment-records
+    status: reviewed
+    method: GET
+    path: /api/now/table/sys_attachment
+    summary: Query attachment metadata records through Table API.
+    api_group: Attachment Table Alias
+    operation_category: read
+    use_cases:
+      - Attachment metadata inventory
+    auth:
+      types: [basic, oauth_2_0]
+    permissions: [sys_attachment read ACL]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: oauth-token
+    status: reviewed
+    method: POST
+    path: /oauth_token.do
+    summary: Request an OAuth access token.
+    api_group: OAuth
+    operation_category: write
+    use_cases:
+      - OAuth authentication for integrations and automation
+    auth:
+      types: [client_credentials, password_grant]
+    permissions:
+      - OAuth application registry configuration
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
