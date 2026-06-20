@@ -35,6 +35,7 @@ catalog/
     all-endpoints.csv
   servicenow-core-platform.yml
   servicenow-common-tables.yml
+  servicenow-official-rest-families.yml
 examples/
   requests/
   responses/
@@ -65,6 +66,7 @@ For that reason, this repository has two layers:
 
 - `catalog/servicenow-core-platform.yml`: curated core endpoint families and high-value table aliases.
 - `catalog/servicenow-common-tables.yml`: concrete Table API aliases for common platform/application tables.
+- `catalog/servicenow-official-rest-families.yml`: additional official REST API families surfaced by the ServiceNow Developer reference.
 - Instance-generated catalogs: produced from a real instance using `tools/generate_table_catalog_from_instance.py`.
 
 Use `catalog/indexes/all-endpoints.csv` for spreadsheet review and filtering.
@@ -75,7 +77,8 @@ Current committed coverage:
 | --- | ---: |
 | Core platform endpoint families | 46 |
 | Common table aliases | 350 |
-| **Total** | **396** |
+| Official REST API families | 25 |
+| **Total** | **421** |
 
 ## Generate A Real Instance Table Catalog
 

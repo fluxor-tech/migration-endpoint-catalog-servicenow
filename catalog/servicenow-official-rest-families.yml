@@ -1,0 +1,314 @@
+vendor: ServiceNow
+product: ServiceNow Platform
+api_family: ServiceNow Official REST API Families
+base_url_template: "https://{instance}.service-now.com"
+official_docs:
+  root: "https://developer.servicenow.com/dev.do#!/reference/api"
+  developer_reference_route: "https://developer.servicenow.com/dev.do#!/reference/api/:release/rest"
+catalog_status: active
+last_reviewed: "2026-06-20"
+generation:
+  source: official_developer_reference_bundle_review
+  endpoint_count: 25
+endpoints:
+  - id: agent-intelligence-predict-solution
+    status: candidate
+    method: POST
+    path: /api/now/agent_intelligence/solution/prediction
+    summary: Request an Agent Intelligence solution prediction.
+    api_group: Agent Intelligence API
+    operation_category: write
+    use_cases: [Predictive classification, recommendation, and automation support]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Agent Intelligence access and target table permissions]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: awa-get-agent
+    status: candidate
+    method: GET
+    path: /api/now/awa/agents/{agentSysId}
+    summary: Read Advanced Work Assignment agent information.
+    api_group: Queue API
+    operation_category: read
+    use_cases: [Agent availability and queue routing lookup]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Advanced Work Assignment read access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: awa-get-agent-by-user
+    status: candidate
+    method: GET
+    path: /api/now/awa/agents/{userSysId}
+    summary: Read Advanced Work Assignment agent information by user.
+    api_group: Queue API
+    operation_category: read
+    use_cases: [Agent mapping and queue routing lookup]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Advanced Work Assignment read access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: awa-get-queue-work-items
+    status: candidate
+    method: GET
+    path: /api/now/awa/queues/{queueSysId}/work_item
+    summary: List work items for an Advanced Work Assignment queue.
+    api_group: Queue API
+    operation_category: read
+    use_cases: [Queue monitoring, workload reporting, and operational validation]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Advanced Work Assignment queue read access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: email-create
+    status: candidate
+    method: POST
+    path: /api/now/email
+    summary: Create or send email through the Email API.
+    api_group: Email API
+    operation_category: write
+    use_cases: [Notification integration and email automation]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Email API access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: email-get
+    status: candidate
+    method: GET
+    path: /api/now/email/{sysId}
+    summary: Read email information by sys_id.
+    api_group: Email API
+    operation_category: read
+    use_cases: [Email audit, delivery validation, and troubleshooting]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Email record read access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: open-nlu-list-models
+    status: candidate
+    method: GET
+    path: /api/now/open-nlu/models
+    summary: List Open NLU models.
+    api_group: Open NLU Resource API
+    operation_category: read
+    use_cases: [NLU model inventory and integration discovery]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Open NLU access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: open-nlu-predict
+    status: candidate
+    method: POST
+    path: /api/now/open-nlu/models/predict
+    summary: Run prediction using an Open NLU model.
+    api_group: Open NLU Resource API
+    operation_category: write
+    use_cases: [Intent/entity prediction and virtual agent integrations]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Open NLU access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: open-nlu-model-entities
+    status: candidate
+    method: GET
+    path: /api/now/open-nlu/models/{modelId}/entities
+    summary: List entities for an Open NLU model.
+    api_group: Open NLU Resource API
+    operation_category: read
+    use_cases: [NLU entity inventory and model validation]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Open NLU access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: open-nlu-model-intents
+    status: candidate
+    method: GET
+    path: /api/now/open-nlu/models/{modelId}/intents
+    summary: List intents for an Open NLU model.
+    api_group: Open NLU Resource API
+    operation_category: read
+    use_cases: [NLU intent inventory and model validation]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Open NLU access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: pa-scorecards
+    status: candidate
+    method: GET
+    path: /api/now/pa/scorecards
+    summary: Query Performance Analytics scorecards.
+    api_group: Performance Analytics REST API
+    operation_category: read
+    use_cases: [KPI reporting, dashboard extraction, and analytics validation]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Performance Analytics read access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: push-installation-create
+    status: candidate
+    method: POST
+    path: /api/now/push/{pushApplicationName}/installation
+    summary: Register a push installation.
+    api_group: Push Installation API
+    operation_category: write
+    use_cases: [Mobile push registration and notification integrations]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Push application access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: push-installation-remove
+    status: candidate
+    method: POST
+    path: /api/now/push/{pushApplicationName}/removeInstallation
+    summary: Remove a push installation.
+    api_group: Push Installation API
+    operation_category: write
+    use_cases: [Mobile push deregistration and cleanup]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Push application access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: application-service-create
+    status: candidate
+    method: POST
+    path: /api/now/cmdb/app_service/create
+    summary: Create an application service.
+    api_group: Application Service API
+    operation_category: write
+    use_cases: [Application service creation and CMDB service modeling]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [CMDB and application service write permissions]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: application-service-get-content
+    status: candidate
+    method: GET
+    path: /api/now/cmdb/app_service/{sysId}/getContent
+    summary: Get application service content.
+    api_group: Application Service API
+    operation_category: read
+    use_cases: [Application service dependency extraction and validation]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [CMDB and application service read permissions]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: cmdb-query-builder-process-status
+    status: candidate
+    method: GET
+    path: /api/now/cmdbquerybuilder/queries/{queryId}/processStatus
+    summary: Read CMDB Query Builder process status.
+    api_group: CMDB Query Builder API
+    operation_category: read
+    use_cases: [CMDB query execution monitoring]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [CMDB Query Builder access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: cmdb-query-builder-save-execute
+    status: candidate
+    method: POST
+    path: /api/now/cmdbquerybuilder/queries/bg/saveAndExecute
+    summary: Save and execute a CMDB Query Builder query in background.
+    api_group: CMDB Query Builder API
+    operation_category: write
+    use_cases: [CMDB graph/query execution and relationship analysis]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [CMDB Query Builder access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: dynamic-translation-detect-language
+    status: candidate
+    method: POST
+    path: /api/sn_dt/v1/dynamic_translation/get_detected_language
+    summary: Detect language using Dynamic Translation.
+    api_group: Dynamic Translation API
+    operation_category: write
+    use_cases: [Language detection for multilingual workflows]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Dynamic Translation access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: dynamic-translation-translate
+    status: candidate
+    method: POST
+    path: /api/sn_dt/v1/dynamic_translation/get_dynamic_translation
+    summary: Translate text using Dynamic Translation.
+    api_group: Dynamic Translation API
+    operation_category: write
+    use_cases: [Translation automation and multilingual support]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Dynamic Translation access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: dynamic-translation-is-enabled
+    status: candidate
+    method: GET
+    path: /api/sn_dt/v1/dynamic_translation/is_enabled
+    summary: Check whether Dynamic Translation is enabled.
+    api_group: Dynamic Translation API
+    operation_category: read
+    use_cases: [Feature availability checks]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Dynamic Translation access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: graphql
+    status: candidate
+    method: POST
+    path: /api/now/graphql
+    summary: Execute a GraphQL request.
+    api_group: GraphQL API
+    operation_category: write
+    use_cases: [GraphQL integrations and composable data retrieval]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [GraphQL and target resource permissions]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: analytics-events
+    status: candidate
+    method: POST
+    path: /api/now/analytics/events
+    summary: Submit analytics events.
+    api_group: Analytics API
+    operation_category: write
+    use_cases: [Event capture and analytics integrations]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Analytics API access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: analytics-update-context
+    status: candidate
+    method: POST
+    path: /api/now/analytics/updateContext
+    summary: Update analytics context.
+    api_group: Analytics API
+    operation_category: write
+    use_cases: [Analytics context enrichment]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Analytics API access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: search-exact-match
+    status: candidate
+    method: GET
+    path: /api/now/v1/search/exactmatch
+    summary: Search exact matches for a term and search context.
+    api_group: Search API
+    operation_category: read
+    use_cases: [Search integrations and portal search validation]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Search context access]
+    parameters:
+      query: [sysparm_term, sysparm_search_context_config_id]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"
+
+  - id: par-nlq-visualization
+    status: candidate
+    method: POST
+    path: /api/now/v1/par/nlq/visualization
+    summary: Generate visualization from natural language query.
+    api_group: Performance Analytics REST API
+    operation_category: write
+    use_cases: [Analytics visualization and NLQ integrations]
+    auth: {types: [basic, oauth_2_0]}
+    permissions: [Performance Analytics and NLQ access]
+    official_doc_url: "https://developer.servicenow.com/dev.do#!/reference/api"

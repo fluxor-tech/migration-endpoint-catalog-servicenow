@@ -17,6 +17,7 @@ API families covered in the initial curated catalog:
 - OAuth token endpoint
 - Common table endpoints for ITSM, CMDB, identity, metadata, audit, journal, knowledge, and attachments
 - Common platform/application table aliases generated from the documented Table API pattern
+- Additional REST API families surfaced by the ServiceNow Developer API reference bundle
 
 ## Review Rules
 

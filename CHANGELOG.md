@@ -10,3 +10,4 @@
 - Added `tools/generate_table_catalog_from_instance.py` to generate concrete Table API endpoint aliases from `sys_db_object`.
 - Added generated common table catalog with 350 concrete Table API aliases across 70 common ServiceNow tables.
 - Added global duplicate endpoint ID validation.
+- Added official REST API family catalog with 25 additional endpoints/families surfaced by the ServiceNow Developer reference.
