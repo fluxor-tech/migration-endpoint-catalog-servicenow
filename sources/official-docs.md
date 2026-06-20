@@ -25,3 +25,6 @@ API families covered in the initial curated catalog:
 4. Mark endpoints as `validated` only after instance testing has confirmed request/response behavior.
 5. Custom tables and Scripted REST APIs should be added in separate overlays or tenant-specific catalogs.
 
+## Completeness Note
+
+A static ServiceNow catalog cannot be globally complete for every customer because table endpoints are generated from instance schema and Scripted REST APIs can be custom-built. Use `tools/generate_table_catalog_from_instance.py` against a real instance to produce a concrete table endpoint catalog for that environment.

@@ -6,4 +6,5 @@
 - Added curated core platform catalog with Table, Aggregate, Attachment, Import Set, Batch, Service Catalog, CMDB Instance, OAuth, and common table aliases.
 - Added validation and CSV index tooling.
 - Added NOTICE and LICENSE.
-
+- Clarified that ServiceNow completeness requires instance-generated table/API catalogs.
+- Added `tools/generate_table_catalog_from_instance.py` to generate concrete Table API endpoint aliases from `sys_db_object`.

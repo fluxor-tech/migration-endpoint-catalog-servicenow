@@ -1,12 +1,12 @@
 # ServiceNow Endpoint Catalog
 
-Complete catalog of ServiceNow REST endpoint families used for platform integrations, reporting, automation, governance, operational support, and migrations.
+Catalog of ServiceNow REST endpoint families used for platform integrations, reporting, automation, governance, operational support, and migrations.
 
 ServiceNow exposes many APIs through product families and instance-specific tables. This catalog models both fixed endpoints and parameterized endpoint families such as the Table API. It is not an SDK and does not replace ServiceNow official documentation.
 
 ## Scope
 
-Current scope:
+Current curated scope:
 
 - Core Platform APIs
 - Table API
@@ -49,11 +49,37 @@ tools/
   validate_catalog.py
 ```
 
-## Coverage
+## Coverage Model
 
-The first version is a curated platform catalog rather than a generated OpenAPI dump. ServiceNow tables make the Table API effectively parameterized, so table coverage is represented through reusable endpoint families plus high-value table aliases.
+ServiceNow does not have a single static public OpenAPI file that represents every endpoint available in every customer instance. The effective endpoint universe depends on:
+
+- Platform release
+- Installed plugins and applications
+- Custom tables
+- Scripted REST APIs
+- ACLs and roles
+- Domain separation
+
+For that reason, this repository has two layers:
+
+- `catalog/servicenow-core-platform.yml`: curated core endpoint families and high-value table aliases.
+- Instance-generated catalogs: produced from a real instance using `tools/generate_table_catalog_from_instance.py`.
 
 Use `catalog/indexes/all-endpoints.csv` for spreadsheet review and filtering.
+
+## Generate A Real Instance Table Catalog
+
+Set credentials for a ServiceNow instance and generate concrete Table API endpoint aliases from `sys_db_object`:
+
+```bash
+set SERVICENOW_INSTANCE=example
+set SERVICENOW_USER=admin
+set SERVICENOW_PASSWORD=...
+python tools/generate_table_catalog_from_instance.py
+python tools/export_catalog_indexes.py
+```
+
+This produces `catalog/servicenow-instance-tables.yml`, which is the correct way to expand beyond the curated core list.
 
 ## Status Values
 
@@ -68,4 +94,3 @@ Use `catalog/indexes/all-endpoints.csv` for spreadsheet review and filtering.
 python tools/validate_catalog.py
 python tools/export_catalog_indexes.py
 ```
-
