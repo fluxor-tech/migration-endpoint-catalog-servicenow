@@ -8,3 +8,5 @@
 - Added NOTICE and LICENSE.
 - Clarified that ServiceNow completeness requires instance-generated table/API catalogs.
 - Added `tools/generate_table_catalog_from_instance.py` to generate concrete Table API endpoint aliases from `sys_db_object`.
+- Added generated common table catalog with 350 concrete Table API aliases across 70 common ServiceNow tables.
+- Added global duplicate endpoint ID validation.

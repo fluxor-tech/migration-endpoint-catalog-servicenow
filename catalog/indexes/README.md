@@ -1,6 +1,6 @@
 # ServiceNow Endpoint Catalog Index
 
-Total endpoints: 46
+Total endpoints: 396
 
 ## By API Group
 
@@ -13,6 +13,7 @@ Total endpoints: 46
 | Batch API | 1 |
 | CMDB Instance API | 4 |
 | CMDB Table Alias | 2 |
+| Common Table API Alias | 350 |
 | ITSM Table Alias | 3 |
 | Identity Table Alias | 5 |
 | Import Set API | 2 |
@@ -28,9 +29,9 @@ Total endpoints: 46
 
 | Category | Endpoints |
 | --- | ---: |
-| delete | 3 |
-| read | 29 |
-| write | 14 |
+| delete | 73 |
+| read | 169 |
+| write | 154 |
 
 ## Files
 

@@ -16,6 +16,7 @@ API families covered in the initial curated catalog:
 - CMDB Instance API
 - OAuth token endpoint
 - Common table endpoints for ITSM, CMDB, identity, metadata, audit, journal, knowledge, and attachments
+- Common platform/application table aliases generated from the documented Table API pattern
 
 ## Review Rules
 

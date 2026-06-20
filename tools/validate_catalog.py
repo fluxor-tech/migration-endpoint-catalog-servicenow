@@ -11,6 +11,7 @@ REQUIRED_ENDPOINT = {"id", "status", "method", "path", "summary", "operation_cat
 def main():
     json.loads(Path("schemas/endpoint.schema.json").read_text(encoding="utf-8"))
     total = 0
+    global_ids = {}
     for path in sorted(Path("catalog").glob("*.yml")):
         data = yaml.safe_load(path.read_text(encoding="utf-8"))
         missing = REQUIRED_ROOT - set(data)
@@ -22,6 +23,9 @@ def main():
             if missing_endpoint:
                 raise SystemExit(f"{path}:{endpoint.get('id')}: missing {sorted(missing_endpoint)}")
             ids.append(endpoint["id"])
+            if endpoint["id"] in global_ids:
+                raise SystemExit(f"duplicate endpoint id across catalogs: {endpoint['id']} in {path} and {global_ids[endpoint['id']]}")
+            global_ids[endpoint["id"]] = path
         if len(ids) != len(set(ids)):
             raise SystemExit(f"{path}: duplicate endpoint ids")
         expected = data.get("generation", {}).get("endpoint_count")
@@ -34,4 +38,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,5264 @@
+vendor: ServiceNow
+product: ServiceNow Platform
+api_family: ServiceNow Table API - Common Table Aliases
+base_url_template: https://{instance}.service-now.com
+official_docs:
+  root: https://developer.servicenow.com/dev.do#!/reference/api
+  table_api: https://developer.servicenow.com/dev.do#!/reference/api
+catalog_status: active
+last_reviewed: '2026-06-20'
+generation:
+  source: curated_common_tables
+  table_count: 70
+  endpoint_count: 350
+endpoints:
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id001
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id002
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: alm_asset'
+  id: table-query-alm-asset
+  method: GET
+  path: /api/now/table/alm_asset
+  summary: Query Asset records.
+  operation_category: read
+  use_cases:
+  - Asset lookup, extraction, reporting, and validation
+  permissions:
+  - alm_asset read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id001
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id002
+  id: table-create-alm-asset
+  method: POST
+  path: /api/now/table/alm_asset
+  summary: Create a Asset record.
+  operation_category: write
+  use_cases:
+  - Asset creation and integration writes
+  permissions:
+  - alm_asset create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id001
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id002
+  id: table-read-alm-asset
+  method: GET
+  path: /api/now/table/alm_asset/{sysId}
+  summary: Read one Asset record by sys_id.
+  operation_category: read
+  use_cases:
+  - Asset record lookup and validation
+  permissions:
+  - alm_asset read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id001
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id002
+  id: table-update-alm-asset
+  method: PATCH
+  path: /api/now/table/alm_asset/{sysId}
+  summary: Update one Asset record by sys_id.
+  operation_category: write
+  use_cases:
+  - Asset selective updates and backfills
+  permissions:
+  - alm_asset write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id001
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id002
+  id: table-delete-alm-asset
+  method: DELETE
+  path: /api/now/table/alm_asset/{sysId}
+  summary: Delete one Asset record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Asset cleanup where permitted
+  permissions:
+  - alm_asset delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id003
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id004
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: alm_hardware'
+  id: table-query-alm-hardware
+  method: GET
+  path: /api/now/table/alm_hardware
+  summary: Query Hardware Asset records.
+  operation_category: read
+  use_cases:
+  - Hardware Asset lookup, extraction, reporting, and validation
+  permissions:
+  - alm_hardware read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id003
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id004
+  id: table-create-alm-hardware
+  method: POST
+  path: /api/now/table/alm_hardware
+  summary: Create a Hardware Asset record.
+  operation_category: write
+  use_cases:
+  - Hardware Asset creation and integration writes
+  permissions:
+  - alm_hardware create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id003
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id004
+  id: table-read-alm-hardware
+  method: GET
+  path: /api/now/table/alm_hardware/{sysId}
+  summary: Read one Hardware Asset record by sys_id.
+  operation_category: read
+  use_cases:
+  - Hardware Asset record lookup and validation
+  permissions:
+  - alm_hardware read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id003
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id004
+  id: table-update-alm-hardware
+  method: PATCH
+  path: /api/now/table/alm_hardware/{sysId}
+  summary: Update one Hardware Asset record by sys_id.
+  operation_category: write
+  use_cases:
+  - Hardware Asset selective updates and backfills
+  permissions:
+  - alm_hardware write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id003
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id004
+  id: table-delete-alm-hardware
+  method: DELETE
+  path: /api/now/table/alm_hardware/{sysId}
+  summary: Delete one Hardware Asset record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Hardware Asset cleanup where permitted
+  permissions:
+  - alm_hardware delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id005
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id006
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: alm_license'
+  id: table-query-alm-license
+  method: GET
+  path: /api/now/table/alm_license
+  summary: Query Software License Asset records.
+  operation_category: read
+  use_cases:
+  - Software License Asset lookup, extraction, reporting, and validation
+  permissions:
+  - alm_license read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id005
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id006
+  id: table-create-alm-license
+  method: POST
+  path: /api/now/table/alm_license
+  summary: Create a Software License Asset record.
+  operation_category: write
+  use_cases:
+  - Software License Asset creation and integration writes
+  permissions:
+  - alm_license create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id005
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id006
+  id: table-read-alm-license
+  method: GET
+  path: /api/now/table/alm_license/{sysId}
+  summary: Read one Software License Asset record by sys_id.
+  operation_category: read
+  use_cases:
+  - Software License Asset record lookup and validation
+  permissions:
+  - alm_license read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id005
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id006
+  id: table-update-alm-license
+  method: PATCH
+  path: /api/now/table/alm_license/{sysId}
+  summary: Update one Software License Asset record by sys_id.
+  operation_category: write
+  use_cases:
+  - Software License Asset selective updates and backfills
+  permissions:
+  - alm_license write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id005
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id006
+  id: table-delete-alm-license
+  method: DELETE
+  path: /api/now/table/alm_license/{sysId}
+  summary: Delete one Software License Asset record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Software License Asset cleanup where permitted
+  permissions:
+  - alm_license delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id007
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id008
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: ast_contract'
+  id: table-query-ast-contract
+  method: GET
+  path: /api/now/table/ast_contract
+  summary: Query Contract records.
+  operation_category: read
+  use_cases:
+  - Contract lookup, extraction, reporting, and validation
+  permissions:
+  - ast_contract read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id007
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id008
+  id: table-create-ast-contract
+  method: POST
+  path: /api/now/table/ast_contract
+  summary: Create a Contract record.
+  operation_category: write
+  use_cases:
+  - Contract creation and integration writes
+  permissions:
+  - ast_contract create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id007
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id008
+  id: table-read-ast-contract
+  method: GET
+  path: /api/now/table/ast_contract/{sysId}
+  summary: Read one Contract record by sys_id.
+  operation_category: read
+  use_cases:
+  - Contract record lookup and validation
+  permissions:
+  - ast_contract read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id007
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id008
+  id: table-update-ast-contract
+  method: PATCH
+  path: /api/now/table/ast_contract/{sysId}
+  summary: Update one Contract record by sys_id.
+  operation_category: write
+  use_cases:
+  - Contract selective updates and backfills
+  permissions:
+  - ast_contract write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id007
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id008
+  id: table-delete-ast-contract
+  method: DELETE
+  path: /api/now/table/ast_contract/{sysId}
+  summary: Delete one Contract record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Contract cleanup where permitted
+  permissions:
+  - ast_contract delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id009
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id010
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: change_task'
+  id: table-query-change-task
+  method: GET
+  path: /api/now/table/change_task
+  summary: Query Change Task records.
+  operation_category: read
+  use_cases:
+  - Change Task lookup, extraction, reporting, and validation
+  permissions:
+  - change_task read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id009
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id010
+  id: table-create-change-task
+  method: POST
+  path: /api/now/table/change_task
+  summary: Create a Change Task record.
+  operation_category: write
+  use_cases:
+  - Change Task creation and integration writes
+  permissions:
+  - change_task create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id009
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id010
+  id: table-read-change-task
+  method: GET
+  path: /api/now/table/change_task/{sysId}
+  summary: Read one Change Task record by sys_id.
+  operation_category: read
+  use_cases:
+  - Change Task record lookup and validation
+  permissions:
+  - change_task read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id009
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id010
+  id: table-update-change-task
+  method: PATCH
+  path: /api/now/table/change_task/{sysId}
+  summary: Update one Change Task record by sys_id.
+  operation_category: write
+  use_cases:
+  - Change Task selective updates and backfills
+  permissions:
+  - change_task write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id009
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id010
+  id: table-delete-change-task
+  method: DELETE
+  path: /api/now/table/change_task/{sysId}
+  summary: Delete one Change Task record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Change Task cleanup where permitted
+  permissions:
+  - change_task delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id011
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id012
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_appl'
+  id: table-query-cmdb-ci-appl
+  method: GET
+  path: /api/now/table/cmdb_ci_appl
+  summary: Query Application CI records.
+  operation_category: read
+  use_cases:
+  - Application CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_appl read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id011
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id012
+  id: table-create-cmdb-ci-appl
+  method: POST
+  path: /api/now/table/cmdb_ci_appl
+  summary: Create a Application CI record.
+  operation_category: write
+  use_cases:
+  - Application CI creation and integration writes
+  permissions:
+  - cmdb_ci_appl create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id011
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id012
+  id: table-read-cmdb-ci-appl
+  method: GET
+  path: /api/now/table/cmdb_ci_appl/{sysId}
+  summary: Read one Application CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Application CI record lookup and validation
+  permissions:
+  - cmdb_ci_appl read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id011
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id012
+  id: table-update-cmdb-ci-appl
+  method: PATCH
+  path: /api/now/table/cmdb_ci_appl/{sysId}
+  summary: Update one Application CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Application CI selective updates and backfills
+  permissions:
+  - cmdb_ci_appl write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id011
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id012
+  id: table-delete-cmdb-ci-appl
+  method: DELETE
+  path: /api/now/table/cmdb_ci_appl/{sysId}
+  summary: Delete one Application CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Application CI cleanup where permitted
+  permissions:
+  - cmdb_ci_appl delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id013
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id014
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_business_app'
+  id: table-query-cmdb-ci-business-app
+  method: GET
+  path: /api/now/table/cmdb_ci_business_app
+  summary: Query Business Application CI records.
+  operation_category: read
+  use_cases:
+  - Business Application CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_business_app read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id013
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id014
+  id: table-create-cmdb-ci-business-app
+  method: POST
+  path: /api/now/table/cmdb_ci_business_app
+  summary: Create a Business Application CI record.
+  operation_category: write
+  use_cases:
+  - Business Application CI creation and integration writes
+  permissions:
+  - cmdb_ci_business_app create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id013
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id014
+  id: table-read-cmdb-ci-business-app
+  method: GET
+  path: /api/now/table/cmdb_ci_business_app/{sysId}
+  summary: Read one Business Application CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Business Application CI record lookup and validation
+  permissions:
+  - cmdb_ci_business_app read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id013
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id014
+  id: table-update-cmdb-ci-business-app
+  method: PATCH
+  path: /api/now/table/cmdb_ci_business_app/{sysId}
+  summary: Update one Business Application CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Business Application CI selective updates and backfills
+  permissions:
+  - cmdb_ci_business_app write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id013
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id014
+  id: table-delete-cmdb-ci-business-app
+  method: DELETE
+  path: /api/now/table/cmdb_ci_business_app/{sysId}
+  summary: Delete one Business Application CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Business Application CI cleanup where permitted
+  permissions:
+  - cmdb_ci_business_app delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id015
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id016
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_computer'
+  id: table-query-cmdb-ci-computer
+  method: GET
+  path: /api/now/table/cmdb_ci_computer
+  summary: Query Computer CI records.
+  operation_category: read
+  use_cases:
+  - Computer CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_computer read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id015
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id016
+  id: table-create-cmdb-ci-computer
+  method: POST
+  path: /api/now/table/cmdb_ci_computer
+  summary: Create a Computer CI record.
+  operation_category: write
+  use_cases:
+  - Computer CI creation and integration writes
+  permissions:
+  - cmdb_ci_computer create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id015
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id016
+  id: table-read-cmdb-ci-computer
+  method: GET
+  path: /api/now/table/cmdb_ci_computer/{sysId}
+  summary: Read one Computer CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Computer CI record lookup and validation
+  permissions:
+  - cmdb_ci_computer read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id015
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id016
+  id: table-update-cmdb-ci-computer
+  method: PATCH
+  path: /api/now/table/cmdb_ci_computer/{sysId}
+  summary: Update one Computer CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Computer CI selective updates and backfills
+  permissions:
+  - cmdb_ci_computer write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id015
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id016
+  id: table-delete-cmdb-ci-computer
+  method: DELETE
+  path: /api/now/table/cmdb_ci_computer/{sysId}
+  summary: Delete one Computer CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Computer CI cleanup where permitted
+  permissions:
+  - cmdb_ci_computer delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id017
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id018
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_database'
+  id: table-query-cmdb-ci-database
+  method: GET
+  path: /api/now/table/cmdb_ci_database
+  summary: Query Database CI records.
+  operation_category: read
+  use_cases:
+  - Database CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_database read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id017
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id018
+  id: table-create-cmdb-ci-database
+  method: POST
+  path: /api/now/table/cmdb_ci_database
+  summary: Create a Database CI record.
+  operation_category: write
+  use_cases:
+  - Database CI creation and integration writes
+  permissions:
+  - cmdb_ci_database create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id017
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id018
+  id: table-read-cmdb-ci-database
+  method: GET
+  path: /api/now/table/cmdb_ci_database/{sysId}
+  summary: Read one Database CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Database CI record lookup and validation
+  permissions:
+  - cmdb_ci_database read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id017
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id018
+  id: table-update-cmdb-ci-database
+  method: PATCH
+  path: /api/now/table/cmdb_ci_database/{sysId}
+  summary: Update one Database CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Database CI selective updates and backfills
+  permissions:
+  - cmdb_ci_database write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id017
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id018
+  id: table-delete-cmdb-ci-database
+  method: DELETE
+  path: /api/now/table/cmdb_ci_database/{sysId}
+  summary: Delete one Database CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Database CI cleanup where permitted
+  permissions:
+  - cmdb_ci_database delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id019
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id020
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_ip_router'
+  id: table-query-cmdb-ci-ip-router
+  method: GET
+  path: /api/now/table/cmdb_ci_ip_router
+  summary: Query IP Router CI records.
+  operation_category: read
+  use_cases:
+  - IP Router CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_ip_router read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id019
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id020
+  id: table-create-cmdb-ci-ip-router
+  method: POST
+  path: /api/now/table/cmdb_ci_ip_router
+  summary: Create a IP Router CI record.
+  operation_category: write
+  use_cases:
+  - IP Router CI creation and integration writes
+  permissions:
+  - cmdb_ci_ip_router create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id019
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id020
+  id: table-read-cmdb-ci-ip-router
+  method: GET
+  path: /api/now/table/cmdb_ci_ip_router/{sysId}
+  summary: Read one IP Router CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - IP Router CI record lookup and validation
+  permissions:
+  - cmdb_ci_ip_router read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id019
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id020
+  id: table-update-cmdb-ci-ip-router
+  method: PATCH
+  path: /api/now/table/cmdb_ci_ip_router/{sysId}
+  summary: Update one IP Router CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - IP Router CI selective updates and backfills
+  permissions:
+  - cmdb_ci_ip_router write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id019
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id020
+  id: table-delete-cmdb-ci-ip-router
+  method: DELETE
+  path: /api/now/table/cmdb_ci_ip_router/{sysId}
+  summary: Delete one IP Router CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - IP Router CI cleanup where permitted
+  permissions:
+  - cmdb_ci_ip_router delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id021
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id022
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_linux_server'
+  id: table-query-cmdb-ci-linux-server
+  method: GET
+  path: /api/now/table/cmdb_ci_linux_server
+  summary: Query Linux Server CI records.
+  operation_category: read
+  use_cases:
+  - Linux Server CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_linux_server read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id021
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id022
+  id: table-create-cmdb-ci-linux-server
+  method: POST
+  path: /api/now/table/cmdb_ci_linux_server
+  summary: Create a Linux Server CI record.
+  operation_category: write
+  use_cases:
+  - Linux Server CI creation and integration writes
+  permissions:
+  - cmdb_ci_linux_server create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id021
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id022
+  id: table-read-cmdb-ci-linux-server
+  method: GET
+  path: /api/now/table/cmdb_ci_linux_server/{sysId}
+  summary: Read one Linux Server CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Linux Server CI record lookup and validation
+  permissions:
+  - cmdb_ci_linux_server read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id021
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id022
+  id: table-update-cmdb-ci-linux-server
+  method: PATCH
+  path: /api/now/table/cmdb_ci_linux_server/{sysId}
+  summary: Update one Linux Server CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Linux Server CI selective updates and backfills
+  permissions:
+  - cmdb_ci_linux_server write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id021
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id022
+  id: table-delete-cmdb-ci-linux-server
+  method: DELETE
+  path: /api/now/table/cmdb_ci_linux_server/{sysId}
+  summary: Delete one Linux Server CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Linux Server CI cleanup where permitted
+  permissions:
+  - cmdb_ci_linux_server delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id023
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id024
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_netgear'
+  id: table-query-cmdb-ci-netgear
+  method: GET
+  path: /api/now/table/cmdb_ci_netgear
+  summary: Query Network Gear CI records.
+  operation_category: read
+  use_cases:
+  - Network Gear CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_netgear read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id023
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id024
+  id: table-create-cmdb-ci-netgear
+  method: POST
+  path: /api/now/table/cmdb_ci_netgear
+  summary: Create a Network Gear CI record.
+  operation_category: write
+  use_cases:
+  - Network Gear CI creation and integration writes
+  permissions:
+  - cmdb_ci_netgear create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id023
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id024
+  id: table-read-cmdb-ci-netgear
+  method: GET
+  path: /api/now/table/cmdb_ci_netgear/{sysId}
+  summary: Read one Network Gear CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Network Gear CI record lookup and validation
+  permissions:
+  - cmdb_ci_netgear read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id023
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id024
+  id: table-update-cmdb-ci-netgear
+  method: PATCH
+  path: /api/now/table/cmdb_ci_netgear/{sysId}
+  summary: Update one Network Gear CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Network Gear CI selective updates and backfills
+  permissions:
+  - cmdb_ci_netgear write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id023
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id024
+  id: table-delete-cmdb-ci-netgear
+  method: DELETE
+  path: /api/now/table/cmdb_ci_netgear/{sysId}
+  summary: Delete one Network Gear CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Network Gear CI cleanup where permitted
+  permissions:
+  - cmdb_ci_netgear delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id025
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id026
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_server'
+  id: table-query-cmdb-ci-server
+  method: GET
+  path: /api/now/table/cmdb_ci_server
+  summary: Query Server CI records.
+  operation_category: read
+  use_cases:
+  - Server CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_server read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id025
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id026
+  id: table-create-cmdb-ci-server
+  method: POST
+  path: /api/now/table/cmdb_ci_server
+  summary: Create a Server CI record.
+  operation_category: write
+  use_cases:
+  - Server CI creation and integration writes
+  permissions:
+  - cmdb_ci_server create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id025
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id026
+  id: table-read-cmdb-ci-server
+  method: GET
+  path: /api/now/table/cmdb_ci_server/{sysId}
+  summary: Read one Server CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Server CI record lookup and validation
+  permissions:
+  - cmdb_ci_server read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id025
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id026
+  id: table-update-cmdb-ci-server
+  method: PATCH
+  path: /api/now/table/cmdb_ci_server/{sysId}
+  summary: Update one Server CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Server CI selective updates and backfills
+  permissions:
+  - cmdb_ci_server write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id025
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id026
+  id: table-delete-cmdb-ci-server
+  method: DELETE
+  path: /api/now/table/cmdb_ci_server/{sysId}
+  summary: Delete one Server CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Server CI cleanup where permitted
+  permissions:
+  - cmdb_ci_server delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id027
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id028
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_service'
+  id: table-query-cmdb-ci-service
+  method: GET
+  path: /api/now/table/cmdb_ci_service
+  summary: Query Service CI records.
+  operation_category: read
+  use_cases:
+  - Service CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_service read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id027
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id028
+  id: table-create-cmdb-ci-service
+  method: POST
+  path: /api/now/table/cmdb_ci_service
+  summary: Create a Service CI record.
+  operation_category: write
+  use_cases:
+  - Service CI creation and integration writes
+  permissions:
+  - cmdb_ci_service create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id027
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id028
+  id: table-read-cmdb-ci-service
+  method: GET
+  path: /api/now/table/cmdb_ci_service/{sysId}
+  summary: Read one Service CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Service CI record lookup and validation
+  permissions:
+  - cmdb_ci_service read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id027
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id028
+  id: table-update-cmdb-ci-service
+  method: PATCH
+  path: /api/now/table/cmdb_ci_service/{sysId}
+  summary: Update one Service CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Service CI selective updates and backfills
+  permissions:
+  - cmdb_ci_service write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id027
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id028
+  id: table-delete-cmdb-ci-service
+  method: DELETE
+  path: /api/now/table/cmdb_ci_service/{sysId}
+  summary: Delete one Service CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Service CI cleanup where permitted
+  permissions:
+  - cmdb_ci_service delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id029
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id030
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_ci_win_server'
+  id: table-query-cmdb-ci-win-server
+  method: GET
+  path: /api/now/table/cmdb_ci_win_server
+  summary: Query Windows Server CI records.
+  operation_category: read
+  use_cases:
+  - Windows Server CI lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_ci_win_server read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id029
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id030
+  id: table-create-cmdb-ci-win-server
+  method: POST
+  path: /api/now/table/cmdb_ci_win_server
+  summary: Create a Windows Server CI record.
+  operation_category: write
+  use_cases:
+  - Windows Server CI creation and integration writes
+  permissions:
+  - cmdb_ci_win_server create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id029
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id030
+  id: table-read-cmdb-ci-win-server
+  method: GET
+  path: /api/now/table/cmdb_ci_win_server/{sysId}
+  summary: Read one Windows Server CI record by sys_id.
+  operation_category: read
+  use_cases:
+  - Windows Server CI record lookup and validation
+  permissions:
+  - cmdb_ci_win_server read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id029
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id030
+  id: table-update-cmdb-ci-win-server
+  method: PATCH
+  path: /api/now/table/cmdb_ci_win_server/{sysId}
+  summary: Update one Windows Server CI record by sys_id.
+  operation_category: write
+  use_cases:
+  - Windows Server CI selective updates and backfills
+  permissions:
+  - cmdb_ci_win_server write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id029
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id030
+  id: table-delete-cmdb-ci-win-server
+  method: DELETE
+  path: /api/now/table/cmdb_ci_win_server/{sysId}
+  summary: Delete one Windows Server CI record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Windows Server CI cleanup where permitted
+  permissions:
+  - cmdb_ci_win_server delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id031
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id032
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_model'
+  id: table-query-cmdb-model
+  method: GET
+  path: /api/now/table/cmdb_model
+  summary: Query CMDB Model records.
+  operation_category: read
+  use_cases:
+  - CMDB Model lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_model read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id031
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id032
+  id: table-create-cmdb-model
+  method: POST
+  path: /api/now/table/cmdb_model
+  summary: Create a CMDB Model record.
+  operation_category: write
+  use_cases:
+  - CMDB Model creation and integration writes
+  permissions:
+  - cmdb_model create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id031
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id032
+  id: table-read-cmdb-model
+  method: GET
+  path: /api/now/table/cmdb_model/{sysId}
+  summary: Read one CMDB Model record by sys_id.
+  operation_category: read
+  use_cases:
+  - CMDB Model record lookup and validation
+  permissions:
+  - cmdb_model read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id031
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id032
+  id: table-update-cmdb-model
+  method: PATCH
+  path: /api/now/table/cmdb_model/{sysId}
+  summary: Update one CMDB Model record by sys_id.
+  operation_category: write
+  use_cases:
+  - CMDB Model selective updates and backfills
+  permissions:
+  - cmdb_model write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id031
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id032
+  id: table-delete-cmdb-model
+  method: DELETE
+  path: /api/now/table/cmdb_model/{sysId}
+  summary: Delete one CMDB Model record by sys_id.
+  operation_category: delete
+  use_cases:
+  - CMDB Model cleanup where permitted
+  permissions:
+  - cmdb_model delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id033
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id034
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmdb_model_category'
+  id: table-query-cmdb-model-category
+  method: GET
+  path: /api/now/table/cmdb_model_category
+  summary: Query CMDB Model Category records.
+  operation_category: read
+  use_cases:
+  - CMDB Model Category lookup, extraction, reporting, and validation
+  permissions:
+  - cmdb_model_category read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id033
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id034
+  id: table-create-cmdb-model-category
+  method: POST
+  path: /api/now/table/cmdb_model_category
+  summary: Create a CMDB Model Category record.
+  operation_category: write
+  use_cases:
+  - CMDB Model Category creation and integration writes
+  permissions:
+  - cmdb_model_category create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id033
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id034
+  id: table-read-cmdb-model-category
+  method: GET
+  path: /api/now/table/cmdb_model_category/{sysId}
+  summary: Read one CMDB Model Category record by sys_id.
+  operation_category: read
+  use_cases:
+  - CMDB Model Category record lookup and validation
+  permissions:
+  - cmdb_model_category read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id033
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id034
+  id: table-update-cmdb-model-category
+  method: PATCH
+  path: /api/now/table/cmdb_model_category/{sysId}
+  summary: Update one CMDB Model Category record by sys_id.
+  operation_category: write
+  use_cases:
+  - CMDB Model Category selective updates and backfills
+  permissions:
+  - cmdb_model_category write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id033
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id034
+  id: table-delete-cmdb-model-category
+  method: DELETE
+  path: /api/now/table/cmdb_model_category/{sysId}
+  summary: Delete one CMDB Model Category record by sys_id.
+  operation_category: delete
+  use_cases:
+  - CMDB Model Category cleanup where permitted
+  permissions:
+  - cmdb_model_category delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id035
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id036
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmn_cost_center'
+  id: table-query-cmn-cost-center
+  method: GET
+  path: /api/now/table/cmn_cost_center
+  summary: Query Cost Center records.
+  operation_category: read
+  use_cases:
+  - Cost Center lookup, extraction, reporting, and validation
+  permissions:
+  - cmn_cost_center read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id035
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id036
+  id: table-create-cmn-cost-center
+  method: POST
+  path: /api/now/table/cmn_cost_center
+  summary: Create a Cost Center record.
+  operation_category: write
+  use_cases:
+  - Cost Center creation and integration writes
+  permissions:
+  - cmn_cost_center create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id035
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id036
+  id: table-read-cmn-cost-center
+  method: GET
+  path: /api/now/table/cmn_cost_center/{sysId}
+  summary: Read one Cost Center record by sys_id.
+  operation_category: read
+  use_cases:
+  - Cost Center record lookup and validation
+  permissions:
+  - cmn_cost_center read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id035
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id036
+  id: table-update-cmn-cost-center
+  method: PATCH
+  path: /api/now/table/cmn_cost_center/{sysId}
+  summary: Update one Cost Center record by sys_id.
+  operation_category: write
+  use_cases:
+  - Cost Center selective updates and backfills
+  permissions:
+  - cmn_cost_center write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id035
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id036
+  id: table-delete-cmn-cost-center
+  method: DELETE
+  path: /api/now/table/cmn_cost_center/{sysId}
+  summary: Delete one Cost Center record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Cost Center cleanup where permitted
+  permissions:
+  - cmn_cost_center delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id037
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id038
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmn_department'
+  id: table-query-cmn-department
+  method: GET
+  path: /api/now/table/cmn_department
+  summary: Query Department records.
+  operation_category: read
+  use_cases:
+  - Department lookup, extraction, reporting, and validation
+  permissions:
+  - cmn_department read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id037
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id038
+  id: table-create-cmn-department
+  method: POST
+  path: /api/now/table/cmn_department
+  summary: Create a Department record.
+  operation_category: write
+  use_cases:
+  - Department creation and integration writes
+  permissions:
+  - cmn_department create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id037
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id038
+  id: table-read-cmn-department
+  method: GET
+  path: /api/now/table/cmn_department/{sysId}
+  summary: Read one Department record by sys_id.
+  operation_category: read
+  use_cases:
+  - Department record lookup and validation
+  permissions:
+  - cmn_department read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id037
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id038
+  id: table-update-cmn-department
+  method: PATCH
+  path: /api/now/table/cmn_department/{sysId}
+  summary: Update one Department record by sys_id.
+  operation_category: write
+  use_cases:
+  - Department selective updates and backfills
+  permissions:
+  - cmn_department write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id037
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id038
+  id: table-delete-cmn-department
+  method: DELETE
+  path: /api/now/table/cmn_department/{sysId}
+  summary: Delete one Department record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Department cleanup where permitted
+  permissions:
+  - cmn_department delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id039
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id040
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmn_location'
+  id: table-query-cmn-location
+  method: GET
+  path: /api/now/table/cmn_location
+  summary: Query Location records.
+  operation_category: read
+  use_cases:
+  - Location lookup, extraction, reporting, and validation
+  permissions:
+  - cmn_location read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id039
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id040
+  id: table-create-cmn-location
+  method: POST
+  path: /api/now/table/cmn_location
+  summary: Create a Location record.
+  operation_category: write
+  use_cases:
+  - Location creation and integration writes
+  permissions:
+  - cmn_location create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id039
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id040
+  id: table-read-cmn-location
+  method: GET
+  path: /api/now/table/cmn_location/{sysId}
+  summary: Read one Location record by sys_id.
+  operation_category: read
+  use_cases:
+  - Location record lookup and validation
+  permissions:
+  - cmn_location read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id039
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id040
+  id: table-update-cmn-location
+  method: PATCH
+  path: /api/now/table/cmn_location/{sysId}
+  summary: Update one Location record by sys_id.
+  operation_category: write
+  use_cases:
+  - Location selective updates and backfills
+  permissions:
+  - cmn_location write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id039
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id040
+  id: table-delete-cmn-location
+  method: DELETE
+  path: /api/now/table/cmn_location/{sysId}
+  summary: Delete one Location record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Location cleanup where permitted
+  permissions:
+  - cmn_location delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id041
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id042
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: cmn_schedule'
+  id: table-query-cmn-schedule
+  method: GET
+  path: /api/now/table/cmn_schedule
+  summary: Query Schedule records.
+  operation_category: read
+  use_cases:
+  - Schedule lookup, extraction, reporting, and validation
+  permissions:
+  - cmn_schedule read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id041
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id042
+  id: table-create-cmn-schedule
+  method: POST
+  path: /api/now/table/cmn_schedule
+  summary: Create a Schedule record.
+  operation_category: write
+  use_cases:
+  - Schedule creation and integration writes
+  permissions:
+  - cmn_schedule create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id041
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id042
+  id: table-read-cmn-schedule
+  method: GET
+  path: /api/now/table/cmn_schedule/{sysId}
+  summary: Read one Schedule record by sys_id.
+  operation_category: read
+  use_cases:
+  - Schedule record lookup and validation
+  permissions:
+  - cmn_schedule read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id041
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id042
+  id: table-update-cmn-schedule
+  method: PATCH
+  path: /api/now/table/cmn_schedule/{sysId}
+  summary: Update one Schedule record by sys_id.
+  operation_category: write
+  use_cases:
+  - Schedule selective updates and backfills
+  permissions:
+  - cmn_schedule write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id041
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id042
+  id: table-delete-cmn-schedule
+  method: DELETE
+  path: /api/now/table/cmn_schedule/{sysId}
+  summary: Delete one Schedule record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Schedule cleanup where permitted
+  permissions:
+  - cmn_schedule delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id043
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id044
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: contract_sla'
+  id: table-query-contract-sla
+  method: GET
+  path: /api/now/table/contract_sla
+  summary: Query SLA Definition records.
+  operation_category: read
+  use_cases:
+  - SLA Definition lookup, extraction, reporting, and validation
+  permissions:
+  - contract_sla read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id043
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id044
+  id: table-create-contract-sla
+  method: POST
+  path: /api/now/table/contract_sla
+  summary: Create a SLA Definition record.
+  operation_category: write
+  use_cases:
+  - SLA Definition creation and integration writes
+  permissions:
+  - contract_sla create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id043
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id044
+  id: table-read-contract-sla
+  method: GET
+  path: /api/now/table/contract_sla/{sysId}
+  summary: Read one SLA Definition record by sys_id.
+  operation_category: read
+  use_cases:
+  - SLA Definition record lookup and validation
+  permissions:
+  - contract_sla read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id043
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id044
+  id: table-update-contract-sla
+  method: PATCH
+  path: /api/now/table/contract_sla/{sysId}
+  summary: Update one SLA Definition record by sys_id.
+  operation_category: write
+  use_cases:
+  - SLA Definition selective updates and backfills
+  permissions:
+  - contract_sla write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id043
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id044
+  id: table-delete-contract-sla
+  method: DELETE
+  path: /api/now/table/contract_sla/{sysId}
+  summary: Delete one SLA Definition record by sys_id.
+  operation_category: delete
+  use_cases:
+  - SLA Definition cleanup where permitted
+  permissions:
+  - contract_sla delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id045
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id046
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: core_company'
+  id: table-query-core-company
+  method: GET
+  path: /api/now/table/core_company
+  summary: Query Company records.
+  operation_category: read
+  use_cases:
+  - Company lookup, extraction, reporting, and validation
+  permissions:
+  - core_company read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id045
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id046
+  id: table-create-core-company
+  method: POST
+  path: /api/now/table/core_company
+  summary: Create a Company record.
+  operation_category: write
+  use_cases:
+  - Company creation and integration writes
+  permissions:
+  - core_company create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id045
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id046
+  id: table-read-core-company
+  method: GET
+  path: /api/now/table/core_company/{sysId}
+  summary: Read one Company record by sys_id.
+  operation_category: read
+  use_cases:
+  - Company record lookup and validation
+  permissions:
+  - core_company read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id045
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id046
+  id: table-update-core-company
+  method: PATCH
+  path: /api/now/table/core_company/{sysId}
+  summary: Update one Company record by sys_id.
+  operation_category: write
+  use_cases:
+  - Company selective updates and backfills
+  permissions:
+  - core_company write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id045
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id046
+  id: table-delete-core-company
+  method: DELETE
+  path: /api/now/table/core_company/{sysId}
+  summary: Delete one Company record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Company cleanup where permitted
+  permissions:
+  - core_company delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id047
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id048
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: discovery_device_history'
+  id: table-query-discovery-device-history
+  method: GET
+  path: /api/now/table/discovery_device_history
+  summary: Query Discovery Device History records.
+  operation_category: read
+  use_cases:
+  - Discovery Device History lookup, extraction, reporting, and validation
+  permissions:
+  - discovery_device_history read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id047
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id048
+  id: table-create-discovery-device-history
+  method: POST
+  path: /api/now/table/discovery_device_history
+  summary: Create a Discovery Device History record.
+  operation_category: write
+  use_cases:
+  - Discovery Device History creation and integration writes
+  permissions:
+  - discovery_device_history create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id047
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id048
+  id: table-read-discovery-device-history
+  method: GET
+  path: /api/now/table/discovery_device_history/{sysId}
+  summary: Read one Discovery Device History record by sys_id.
+  operation_category: read
+  use_cases:
+  - Discovery Device History record lookup and validation
+  permissions:
+  - discovery_device_history read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id047
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id048
+  id: table-update-discovery-device-history
+  method: PATCH
+  path: /api/now/table/discovery_device_history/{sysId}
+  summary: Update one Discovery Device History record by sys_id.
+  operation_category: write
+  use_cases:
+  - Discovery Device History selective updates and backfills
+  permissions:
+  - discovery_device_history write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id047
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id048
+  id: table-delete-discovery-device-history
+  method: DELETE
+  path: /api/now/table/discovery_device_history/{sysId}
+  summary: Delete one Discovery Device History record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Discovery Device History cleanup where permitted
+  permissions:
+  - discovery_device_history delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id049
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id050
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: em_alert'
+  id: table-query-em-alert
+  method: GET
+  path: /api/now/table/em_alert
+  summary: Query Event Management Alert records.
+  operation_category: read
+  use_cases:
+  - Event Management Alert lookup, extraction, reporting, and validation
+  permissions:
+  - em_alert read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id049
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id050
+  id: table-create-em-alert
+  method: POST
+  path: /api/now/table/em_alert
+  summary: Create a Event Management Alert record.
+  operation_category: write
+  use_cases:
+  - Event Management Alert creation and integration writes
+  permissions:
+  - em_alert create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id049
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id050
+  id: table-read-em-alert
+  method: GET
+  path: /api/now/table/em_alert/{sysId}
+  summary: Read one Event Management Alert record by sys_id.
+  operation_category: read
+  use_cases:
+  - Event Management Alert record lookup and validation
+  permissions:
+  - em_alert read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id049
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id050
+  id: table-update-em-alert
+  method: PATCH
+  path: /api/now/table/em_alert/{sysId}
+  summary: Update one Event Management Alert record by sys_id.
+  operation_category: write
+  use_cases:
+  - Event Management Alert selective updates and backfills
+  permissions:
+  - em_alert write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id049
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id050
+  id: table-delete-em-alert
+  method: DELETE
+  path: /api/now/table/em_alert/{sysId}
+  summary: Delete one Event Management Alert record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Event Management Alert cleanup where permitted
+  permissions:
+  - em_alert delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id051
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id052
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: em_event'
+  id: table-query-em-event
+  method: GET
+  path: /api/now/table/em_event
+  summary: Query Event Management Event records.
+  operation_category: read
+  use_cases:
+  - Event Management Event lookup, extraction, reporting, and validation
+  permissions:
+  - em_event read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id051
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id052
+  id: table-create-em-event
+  method: POST
+  path: /api/now/table/em_event
+  summary: Create a Event Management Event record.
+  operation_category: write
+  use_cases:
+  - Event Management Event creation and integration writes
+  permissions:
+  - em_event create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id051
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id052
+  id: table-read-em-event
+  method: GET
+  path: /api/now/table/em_event/{sysId}
+  summary: Read one Event Management Event record by sys_id.
+  operation_category: read
+  use_cases:
+  - Event Management Event record lookup and validation
+  permissions:
+  - em_event read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id051
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id052
+  id: table-update-em-event
+  method: PATCH
+  path: /api/now/table/em_event/{sysId}
+  summary: Update one Event Management Event record by sys_id.
+  operation_category: write
+  use_cases:
+  - Event Management Event selective updates and backfills
+  permissions:
+  - em_event write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id051
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id052
+  id: table-delete-em-event
+  method: DELETE
+  path: /api/now/table/em_event/{sysId}
+  summary: Delete one Event Management Event record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Event Management Event cleanup where permitted
+  permissions:
+  - em_event delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id053
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id054
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: hr_case'
+  id: table-query-hr-case
+  method: GET
+  path: /api/now/table/hr_case
+  summary: Query HR Case records.
+  operation_category: read
+  use_cases:
+  - HR Case lookup, extraction, reporting, and validation
+  permissions:
+  - hr_case read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id053
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id054
+  id: table-create-hr-case
+  method: POST
+  path: /api/now/table/hr_case
+  summary: Create a HR Case record.
+  operation_category: write
+  use_cases:
+  - HR Case creation and integration writes
+  permissions:
+  - hr_case create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id053
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id054
+  id: table-read-hr-case
+  method: GET
+  path: /api/now/table/hr_case/{sysId}
+  summary: Read one HR Case record by sys_id.
+  operation_category: read
+  use_cases:
+  - HR Case record lookup and validation
+  permissions:
+  - hr_case read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id053
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id054
+  id: table-update-hr-case
+  method: PATCH
+  path: /api/now/table/hr_case/{sysId}
+  summary: Update one HR Case record by sys_id.
+  operation_category: write
+  use_cases:
+  - HR Case selective updates and backfills
+  permissions:
+  - hr_case write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id053
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id054
+  id: table-delete-hr-case
+  method: DELETE
+  path: /api/now/table/hr_case/{sysId}
+  summary: Delete one HR Case record by sys_id.
+  operation_category: delete
+  use_cases:
+  - HR Case cleanup where permitted
+  permissions:
+  - hr_case delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id055
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id056
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: kb_category'
+  id: table-query-kb-category
+  method: GET
+  path: /api/now/table/kb_category
+  summary: Query Knowledge Category records.
+  operation_category: read
+  use_cases:
+  - Knowledge Category lookup, extraction, reporting, and validation
+  permissions:
+  - kb_category read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id055
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id056
+  id: table-create-kb-category
+  method: POST
+  path: /api/now/table/kb_category
+  summary: Create a Knowledge Category record.
+  operation_category: write
+  use_cases:
+  - Knowledge Category creation and integration writes
+  permissions:
+  - kb_category create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id055
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id056
+  id: table-read-kb-category
+  method: GET
+  path: /api/now/table/kb_category/{sysId}
+  summary: Read one Knowledge Category record by sys_id.
+  operation_category: read
+  use_cases:
+  - Knowledge Category record lookup and validation
+  permissions:
+  - kb_category read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id055
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id056
+  id: table-update-kb-category
+  method: PATCH
+  path: /api/now/table/kb_category/{sysId}
+  summary: Update one Knowledge Category record by sys_id.
+  operation_category: write
+  use_cases:
+  - Knowledge Category selective updates and backfills
+  permissions:
+  - kb_category write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id055
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id056
+  id: table-delete-kb-category
+  method: DELETE
+  path: /api/now/table/kb_category/{sysId}
+  summary: Delete one Knowledge Category record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Knowledge Category cleanup where permitted
+  permissions:
+  - kb_category delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id057
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id058
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: kb_knowledge_base'
+  id: table-query-kb-knowledge-base
+  method: GET
+  path: /api/now/table/kb_knowledge_base
+  summary: Query Knowledge Base records.
+  operation_category: read
+  use_cases:
+  - Knowledge Base lookup, extraction, reporting, and validation
+  permissions:
+  - kb_knowledge_base read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id057
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id058
+  id: table-create-kb-knowledge-base
+  method: POST
+  path: /api/now/table/kb_knowledge_base
+  summary: Create a Knowledge Base record.
+  operation_category: write
+  use_cases:
+  - Knowledge Base creation and integration writes
+  permissions:
+  - kb_knowledge_base create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id057
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id058
+  id: table-read-kb-knowledge-base
+  method: GET
+  path: /api/now/table/kb_knowledge_base/{sysId}
+  summary: Read one Knowledge Base record by sys_id.
+  operation_category: read
+  use_cases:
+  - Knowledge Base record lookup and validation
+  permissions:
+  - kb_knowledge_base read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id057
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id058
+  id: table-update-kb-knowledge-base
+  method: PATCH
+  path: /api/now/table/kb_knowledge_base/{sysId}
+  summary: Update one Knowledge Base record by sys_id.
+  operation_category: write
+  use_cases:
+  - Knowledge Base selective updates and backfills
+  permissions:
+  - kb_knowledge_base write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id057
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id058
+  id: table-delete-kb-knowledge-base
+  method: DELETE
+  path: /api/now/table/kb_knowledge_base/{sysId}
+  summary: Delete one Knowledge Base record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Knowledge Base cleanup where permitted
+  permissions:
+  - kb_knowledge_base delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id059
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id060
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: kb_use'
+  id: table-query-kb-use
+  method: GET
+  path: /api/now/table/kb_use
+  summary: Query Knowledge Use records.
+  operation_category: read
+  use_cases:
+  - Knowledge Use lookup, extraction, reporting, and validation
+  permissions:
+  - kb_use read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id059
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id060
+  id: table-create-kb-use
+  method: POST
+  path: /api/now/table/kb_use
+  summary: Create a Knowledge Use record.
+  operation_category: write
+  use_cases:
+  - Knowledge Use creation and integration writes
+  permissions:
+  - kb_use create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id059
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id060
+  id: table-read-kb-use
+  method: GET
+  path: /api/now/table/kb_use/{sysId}
+  summary: Read one Knowledge Use record by sys_id.
+  operation_category: read
+  use_cases:
+  - Knowledge Use record lookup and validation
+  permissions:
+  - kb_use read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id059
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id060
+  id: table-update-kb-use
+  method: PATCH
+  path: /api/now/table/kb_use/{sysId}
+  summary: Update one Knowledge Use record by sys_id.
+  operation_category: write
+  use_cases:
+  - Knowledge Use selective updates and backfills
+  permissions:
+  - kb_use write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id059
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id060
+  id: table-delete-kb-use
+  method: DELETE
+  path: /api/now/table/kb_use/{sysId}
+  summary: Delete one Knowledge Use record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Knowledge Use cleanup where permitted
+  permissions:
+  - kb_use delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id061
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id062
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: metric_instance'
+  id: table-query-metric-instance
+  method: GET
+  path: /api/now/table/metric_instance
+  summary: Query Metric Instance records.
+  operation_category: read
+  use_cases:
+  - Metric Instance lookup, extraction, reporting, and validation
+  permissions:
+  - metric_instance read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id061
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id062
+  id: table-create-metric-instance
+  method: POST
+  path: /api/now/table/metric_instance
+  summary: Create a Metric Instance record.
+  operation_category: write
+  use_cases:
+  - Metric Instance creation and integration writes
+  permissions:
+  - metric_instance create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id061
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id062
+  id: table-read-metric-instance
+  method: GET
+  path: /api/now/table/metric_instance/{sysId}
+  summary: Read one Metric Instance record by sys_id.
+  operation_category: read
+  use_cases:
+  - Metric Instance record lookup and validation
+  permissions:
+  - metric_instance read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id061
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id062
+  id: table-update-metric-instance
+  method: PATCH
+  path: /api/now/table/metric_instance/{sysId}
+  summary: Update one Metric Instance record by sys_id.
+  operation_category: write
+  use_cases:
+  - Metric Instance selective updates and backfills
+  permissions:
+  - metric_instance write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id061
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id062
+  id: table-delete-metric-instance
+  method: DELETE
+  path: /api/now/table/metric_instance/{sysId}
+  summary: Delete one Metric Instance record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Metric Instance cleanup where permitted
+  permissions:
+  - metric_instance delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id063
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id064
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: problem_task'
+  id: table-query-problem-task
+  method: GET
+  path: /api/now/table/problem_task
+  summary: Query Problem Task records.
+  operation_category: read
+  use_cases:
+  - Problem Task lookup, extraction, reporting, and validation
+  permissions:
+  - problem_task read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id063
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id064
+  id: table-create-problem-task
+  method: POST
+  path: /api/now/table/problem_task
+  summary: Create a Problem Task record.
+  operation_category: write
+  use_cases:
+  - Problem Task creation and integration writes
+  permissions:
+  - problem_task create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id063
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id064
+  id: table-read-problem-task
+  method: GET
+  path: /api/now/table/problem_task/{sysId}
+  summary: Read one Problem Task record by sys_id.
+  operation_category: read
+  use_cases:
+  - Problem Task record lookup and validation
+  permissions:
+  - problem_task read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id063
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id064
+  id: table-update-problem-task
+  method: PATCH
+  path: /api/now/table/problem_task/{sysId}
+  summary: Update one Problem Task record by sys_id.
+  operation_category: write
+  use_cases:
+  - Problem Task selective updates and backfills
+  permissions:
+  - problem_task write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id063
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id064
+  id: table-delete-problem-task
+  method: DELETE
+  path: /api/now/table/problem_task/{sysId}
+  summary: Delete one Problem Task record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Problem Task cleanup where permitted
+  permissions:
+  - problem_task delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id065
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id066
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sc_cat_item'
+  id: table-query-sc-cat-item
+  method: GET
+  path: /api/now/table/sc_cat_item
+  summary: Query Catalog Item records.
+  operation_category: read
+  use_cases:
+  - Catalog Item lookup, extraction, reporting, and validation
+  permissions:
+  - sc_cat_item read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id065
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id066
+  id: table-create-sc-cat-item
+  method: POST
+  path: /api/now/table/sc_cat_item
+  summary: Create a Catalog Item record.
+  operation_category: write
+  use_cases:
+  - Catalog Item creation and integration writes
+  permissions:
+  - sc_cat_item create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id065
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id066
+  id: table-read-sc-cat-item
+  method: GET
+  path: /api/now/table/sc_cat_item/{sysId}
+  summary: Read one Catalog Item record by sys_id.
+  operation_category: read
+  use_cases:
+  - Catalog Item record lookup and validation
+  permissions:
+  - sc_cat_item read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id065
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id066
+  id: table-update-sc-cat-item
+  method: PATCH
+  path: /api/now/table/sc_cat_item/{sysId}
+  summary: Update one Catalog Item record by sys_id.
+  operation_category: write
+  use_cases:
+  - Catalog Item selective updates and backfills
+  permissions:
+  - sc_cat_item write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id065
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id066
+  id: table-delete-sc-cat-item
+  method: DELETE
+  path: /api/now/table/sc_cat_item/{sysId}
+  summary: Delete one Catalog Item record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Catalog Item cleanup where permitted
+  permissions:
+  - sc_cat_item delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id067
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id068
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sc_catalog'
+  id: table-query-sc-catalog
+  method: GET
+  path: /api/now/table/sc_catalog
+  summary: Query Catalog records.
+  operation_category: read
+  use_cases:
+  - Catalog lookup, extraction, reporting, and validation
+  permissions:
+  - sc_catalog read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id067
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id068
+  id: table-create-sc-catalog
+  method: POST
+  path: /api/now/table/sc_catalog
+  summary: Create a Catalog record.
+  operation_category: write
+  use_cases:
+  - Catalog creation and integration writes
+  permissions:
+  - sc_catalog create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id067
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id068
+  id: table-read-sc-catalog
+  method: GET
+  path: /api/now/table/sc_catalog/{sysId}
+  summary: Read one Catalog record by sys_id.
+  operation_category: read
+  use_cases:
+  - Catalog record lookup and validation
+  permissions:
+  - sc_catalog read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id067
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id068
+  id: table-update-sc-catalog
+  method: PATCH
+  path: /api/now/table/sc_catalog/{sysId}
+  summary: Update one Catalog record by sys_id.
+  operation_category: write
+  use_cases:
+  - Catalog selective updates and backfills
+  permissions:
+  - sc_catalog write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id067
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id068
+  id: table-delete-sc-catalog
+  method: DELETE
+  path: /api/now/table/sc_catalog/{sysId}
+  summary: Delete one Catalog record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Catalog cleanup where permitted
+  permissions:
+  - sc_catalog delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id069
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id070
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sc_category'
+  id: table-query-sc-category
+  method: GET
+  path: /api/now/table/sc_category
+  summary: Query Catalog Category records.
+  operation_category: read
+  use_cases:
+  - Catalog Category lookup, extraction, reporting, and validation
+  permissions:
+  - sc_category read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id069
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id070
+  id: table-create-sc-category
+  method: POST
+  path: /api/now/table/sc_category
+  summary: Create a Catalog Category record.
+  operation_category: write
+  use_cases:
+  - Catalog Category creation and integration writes
+  permissions:
+  - sc_category create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id069
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id070
+  id: table-read-sc-category
+  method: GET
+  path: /api/now/table/sc_category/{sysId}
+  summary: Read one Catalog Category record by sys_id.
+  operation_category: read
+  use_cases:
+  - Catalog Category record lookup and validation
+  permissions:
+  - sc_category read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id069
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id070
+  id: table-update-sc-category
+  method: PATCH
+  path: /api/now/table/sc_category/{sysId}
+  summary: Update one Catalog Category record by sys_id.
+  operation_category: write
+  use_cases:
+  - Catalog Category selective updates and backfills
+  permissions:
+  - sc_category write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id069
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id070
+  id: table-delete-sc-category
+  method: DELETE
+  path: /api/now/table/sc_category/{sysId}
+  summary: Delete one Catalog Category record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Catalog Category cleanup where permitted
+  permissions:
+  - sc_category delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id071
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id072
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sc_item_option'
+  id: table-query-sc-item-option
+  method: GET
+  path: /api/now/table/sc_item_option
+  summary: Query Catalog Item Option records.
+  operation_category: read
+  use_cases:
+  - Catalog Item Option lookup, extraction, reporting, and validation
+  permissions:
+  - sc_item_option read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id071
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id072
+  id: table-create-sc-item-option
+  method: POST
+  path: /api/now/table/sc_item_option
+  summary: Create a Catalog Item Option record.
+  operation_category: write
+  use_cases:
+  - Catalog Item Option creation and integration writes
+  permissions:
+  - sc_item_option create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id071
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id072
+  id: table-read-sc-item-option
+  method: GET
+  path: /api/now/table/sc_item_option/{sysId}
+  summary: Read one Catalog Item Option record by sys_id.
+  operation_category: read
+  use_cases:
+  - Catalog Item Option record lookup and validation
+  permissions:
+  - sc_item_option read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id071
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id072
+  id: table-update-sc-item-option
+  method: PATCH
+  path: /api/now/table/sc_item_option/{sysId}
+  summary: Update one Catalog Item Option record by sys_id.
+  operation_category: write
+  use_cases:
+  - Catalog Item Option selective updates and backfills
+  permissions:
+  - sc_item_option write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id071
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id072
+  id: table-delete-sc-item-option
+  method: DELETE
+  path: /api/now/table/sc_item_option/{sysId}
+  summary: Delete one Catalog Item Option record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Catalog Item Option cleanup where permitted
+  permissions:
+  - sc_item_option delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id073
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id074
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sc_item_option_mtom'
+  id: table-query-sc-item-option-mtom
+  method: GET
+  path: /api/now/table/sc_item_option_mtom
+  summary: Query Catalog Item Option Link records.
+  operation_category: read
+  use_cases:
+  - Catalog Item Option Link lookup, extraction, reporting, and validation
+  permissions:
+  - sc_item_option_mtom read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id073
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id074
+  id: table-create-sc-item-option-mtom
+  method: POST
+  path: /api/now/table/sc_item_option_mtom
+  summary: Create a Catalog Item Option Link record.
+  operation_category: write
+  use_cases:
+  - Catalog Item Option Link creation and integration writes
+  permissions:
+  - sc_item_option_mtom create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id073
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id074
+  id: table-read-sc-item-option-mtom
+  method: GET
+  path: /api/now/table/sc_item_option_mtom/{sysId}
+  summary: Read one Catalog Item Option Link record by sys_id.
+  operation_category: read
+  use_cases:
+  - Catalog Item Option Link record lookup and validation
+  permissions:
+  - sc_item_option_mtom read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id073
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id074
+  id: table-update-sc-item-option-mtom
+  method: PATCH
+  path: /api/now/table/sc_item_option_mtom/{sysId}
+  summary: Update one Catalog Item Option Link record by sys_id.
+  operation_category: write
+  use_cases:
+  - Catalog Item Option Link selective updates and backfills
+  permissions:
+  - sc_item_option_mtom write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id073
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id074
+  id: table-delete-sc-item-option-mtom
+  method: DELETE
+  path: /api/now/table/sc_item_option_mtom/{sysId}
+  summary: Delete one Catalog Item Option Link record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Catalog Item Option Link cleanup where permitted
+  permissions:
+  - sc_item_option_mtom delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id075
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id076
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sc_item_produced_record'
+  id: table-query-sc-item-produced-record
+  method: GET
+  path: /api/now/table/sc_item_produced_record
+  summary: Query Catalog Produced Record records.
+  operation_category: read
+  use_cases:
+  - Catalog Produced Record lookup, extraction, reporting, and validation
+  permissions:
+  - sc_item_produced_record read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id075
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id076
+  id: table-create-sc-item-produced-record
+  method: POST
+  path: /api/now/table/sc_item_produced_record
+  summary: Create a Catalog Produced Record record.
+  operation_category: write
+  use_cases:
+  - Catalog Produced Record creation and integration writes
+  permissions:
+  - sc_item_produced_record create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id075
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id076
+  id: table-read-sc-item-produced-record
+  method: GET
+  path: /api/now/table/sc_item_produced_record/{sysId}
+  summary: Read one Catalog Produced Record record by sys_id.
+  operation_category: read
+  use_cases:
+  - Catalog Produced Record record lookup and validation
+  permissions:
+  - sc_item_produced_record read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id075
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id076
+  id: table-update-sc-item-produced-record
+  method: PATCH
+  path: /api/now/table/sc_item_produced_record/{sysId}
+  summary: Update one Catalog Produced Record record by sys_id.
+  operation_category: write
+  use_cases:
+  - Catalog Produced Record selective updates and backfills
+  permissions:
+  - sc_item_produced_record write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id075
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id076
+  id: table-delete-sc-item-produced-record
+  method: DELETE
+  path: /api/now/table/sc_item_produced_record/{sysId}
+  summary: Delete one Catalog Produced Record record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Catalog Produced Record cleanup where permitted
+  permissions:
+  - sc_item_produced_record delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id077
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id078
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sc_multi_row_question_answer'
+  id: table-query-sc-multi-row-question-answer
+  method: GET
+  path: /api/now/table/sc_multi_row_question_answer
+  summary: Query Multi-Row Variable Set Answer records.
+  operation_category: read
+  use_cases:
+  - Multi-Row Variable Set Answer lookup, extraction, reporting, and validation
+  permissions:
+  - sc_multi_row_question_answer read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id077
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id078
+  id: table-create-sc-multi-row-question-answer
+  method: POST
+  path: /api/now/table/sc_multi_row_question_answer
+  summary: Create a Multi-Row Variable Set Answer record.
+  operation_category: write
+  use_cases:
+  - Multi-Row Variable Set Answer creation and integration writes
+  permissions:
+  - sc_multi_row_question_answer create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id077
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id078
+  id: table-read-sc-multi-row-question-answer
+  method: GET
+  path: /api/now/table/sc_multi_row_question_answer/{sysId}
+  summary: Read one Multi-Row Variable Set Answer record by sys_id.
+  operation_category: read
+  use_cases:
+  - Multi-Row Variable Set Answer record lookup and validation
+  permissions:
+  - sc_multi_row_question_answer read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id077
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id078
+  id: table-update-sc-multi-row-question-answer
+  method: PATCH
+  path: /api/now/table/sc_multi_row_question_answer/{sysId}
+  summary: Update one Multi-Row Variable Set Answer record by sys_id.
+  operation_category: write
+  use_cases:
+  - Multi-Row Variable Set Answer selective updates and backfills
+  permissions:
+  - sc_multi_row_question_answer write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id077
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id078
+  id: table-delete-sc-multi-row-question-answer
+  method: DELETE
+  path: /api/now/table/sc_multi_row_question_answer/{sysId}
+  summary: Delete one Multi-Row Variable Set Answer record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Multi-Row Variable Set Answer cleanup where permitted
+  permissions:
+  - sc_multi_row_question_answer delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id079
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id080
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sc_task_sla'
+  id: table-query-sc-task-sla
+  method: GET
+  path: /api/now/table/sc_task_sla
+  summary: Query Catalog Task SLA records.
+  operation_category: read
+  use_cases:
+  - Catalog Task SLA lookup, extraction, reporting, and validation
+  permissions:
+  - sc_task_sla read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id079
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id080
+  id: table-create-sc-task-sla
+  method: POST
+  path: /api/now/table/sc_task_sla
+  summary: Create a Catalog Task SLA record.
+  operation_category: write
+  use_cases:
+  - Catalog Task SLA creation and integration writes
+  permissions:
+  - sc_task_sla create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id079
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id080
+  id: table-read-sc-task-sla
+  method: GET
+  path: /api/now/table/sc_task_sla/{sysId}
+  summary: Read one Catalog Task SLA record by sys_id.
+  operation_category: read
+  use_cases:
+  - Catalog Task SLA record lookup and validation
+  permissions:
+  - sc_task_sla read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id079
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id080
+  id: table-update-sc-task-sla
+  method: PATCH
+  path: /api/now/table/sc_task_sla/{sysId}
+  summary: Update one Catalog Task SLA record by sys_id.
+  operation_category: write
+  use_cases:
+  - Catalog Task SLA selective updates and backfills
+  permissions:
+  - sc_task_sla write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id079
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id080
+  id: table-delete-sc-task-sla
+  method: DELETE
+  path: /api/now/table/sc_task_sla/{sysId}
+  summary: Delete one Catalog Task SLA record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Catalog Task SLA cleanup where permitted
+  permissions:
+  - sc_task_sla delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id081
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id082
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sla'
+  id: table-query-sla
+  method: GET
+  path: /api/now/table/sla
+  summary: Query SLA records.
+  operation_category: read
+  use_cases:
+  - SLA lookup, extraction, reporting, and validation
+  permissions:
+  - sla read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id081
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id082
+  id: table-create-sla
+  method: POST
+  path: /api/now/table/sla
+  summary: Create a SLA record.
+  operation_category: write
+  use_cases:
+  - SLA creation and integration writes
+  permissions:
+  - sla create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id081
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id082
+  id: table-read-sla
+  method: GET
+  path: /api/now/table/sla/{sysId}
+  summary: Read one SLA record by sys_id.
+  operation_category: read
+  use_cases:
+  - SLA record lookup and validation
+  permissions:
+  - sla read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id081
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id082
+  id: table-update-sla
+  method: PATCH
+  path: /api/now/table/sla/{sysId}
+  summary: Update one SLA record by sys_id.
+  operation_category: write
+  use_cases:
+  - SLA selective updates and backfills
+  permissions:
+  - sla write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id081
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id082
+  id: table-delete-sla
+  method: DELETE
+  path: /api/now/table/sla/{sysId}
+  summary: Delete one SLA record by sys_id.
+  operation_category: delete
+  use_cases:
+  - SLA cleanup where permitted
+  permissions:
+  - sla delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id083
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id084
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sn_customerservice_case'
+  id: table-query-sn-customerservice-case
+  method: GET
+  path: /api/now/table/sn_customerservice_case
+  summary: Query Customer Service Case records.
+  operation_category: read
+  use_cases:
+  - Customer Service Case lookup, extraction, reporting, and validation
+  permissions:
+  - sn_customerservice_case read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id083
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id084
+  id: table-create-sn-customerservice-case
+  method: POST
+  path: /api/now/table/sn_customerservice_case
+  summary: Create a Customer Service Case record.
+  operation_category: write
+  use_cases:
+  - Customer Service Case creation and integration writes
+  permissions:
+  - sn_customerservice_case create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id083
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id084
+  id: table-read-sn-customerservice-case
+  method: GET
+  path: /api/now/table/sn_customerservice_case/{sysId}
+  summary: Read one Customer Service Case record by sys_id.
+  operation_category: read
+  use_cases:
+  - Customer Service Case record lookup and validation
+  permissions:
+  - sn_customerservice_case read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id083
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id084
+  id: table-update-sn-customerservice-case
+  method: PATCH
+  path: /api/now/table/sn_customerservice_case/{sysId}
+  summary: Update one Customer Service Case record by sys_id.
+  operation_category: write
+  use_cases:
+  - Customer Service Case selective updates and backfills
+  permissions:
+  - sn_customerservice_case write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id083
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id084
+  id: table-delete-sn-customerservice-case
+  method: DELETE
+  path: /api/now/table/sn_customerservice_case/{sysId}
+  summary: Delete one Customer Service Case record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Customer Service Case cleanup where permitted
+  permissions:
+  - sn_customerservice_case delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id085
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id086
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_app'
+  id: table-query-sys-app
+  method: GET
+  path: /api/now/table/sys_app
+  summary: Query Application records.
+  operation_category: read
+  use_cases:
+  - Application lookup, extraction, reporting, and validation
+  permissions:
+  - sys_app read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id085
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id086
+  id: table-create-sys-app
+  method: POST
+  path: /api/now/table/sys_app
+  summary: Create a Application record.
+  operation_category: write
+  use_cases:
+  - Application creation and integration writes
+  permissions:
+  - sys_app create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id085
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id086
+  id: table-read-sys-app
+  method: GET
+  path: /api/now/table/sys_app/{sysId}
+  summary: Read one Application record by sys_id.
+  operation_category: read
+  use_cases:
+  - Application record lookup and validation
+  permissions:
+  - sys_app read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id085
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id086
+  id: table-update-sys-app
+  method: PATCH
+  path: /api/now/table/sys_app/{sysId}
+  summary: Update one Application record by sys_id.
+  operation_category: write
+  use_cases:
+  - Application selective updates and backfills
+  permissions:
+  - sys_app write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id085
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id086
+  id: table-delete-sys-app
+  method: DELETE
+  path: /api/now/table/sys_app/{sysId}
+  summary: Delete one Application record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Application cleanup where permitted
+  permissions:
+  - sys_app delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id087
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id088
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_attachment_doc'
+  id: table-query-sys-attachment-doc
+  method: GET
+  path: /api/now/table/sys_attachment_doc
+  summary: Query Attachment Document Chunk records.
+  operation_category: read
+  use_cases:
+  - Attachment Document Chunk lookup, extraction, reporting, and validation
+  permissions:
+  - sys_attachment_doc read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id087
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id088
+  id: table-create-sys-attachment-doc
+  method: POST
+  path: /api/now/table/sys_attachment_doc
+  summary: Create a Attachment Document Chunk record.
+  operation_category: write
+  use_cases:
+  - Attachment Document Chunk creation and integration writes
+  permissions:
+  - sys_attachment_doc create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id087
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id088
+  id: table-read-sys-attachment-doc
+  method: GET
+  path: /api/now/table/sys_attachment_doc/{sysId}
+  summary: Read one Attachment Document Chunk record by sys_id.
+  operation_category: read
+  use_cases:
+  - Attachment Document Chunk record lookup and validation
+  permissions:
+  - sys_attachment_doc read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id087
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id088
+  id: table-update-sys-attachment-doc
+  method: PATCH
+  path: /api/now/table/sys_attachment_doc/{sysId}
+  summary: Update one Attachment Document Chunk record by sys_id.
+  operation_category: write
+  use_cases:
+  - Attachment Document Chunk selective updates and backfills
+  permissions:
+  - sys_attachment_doc write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id087
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id088
+  id: table-delete-sys-attachment-doc
+  method: DELETE
+  path: /api/now/table/sys_attachment_doc/{sysId}
+  summary: Delete one Attachment Document Chunk record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Attachment Document Chunk cleanup where permitted
+  permissions:
+  - sys_attachment_doc delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id089
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id090
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_audit_delete'
+  id: table-query-sys-audit-delete
+  method: GET
+  path: /api/now/table/sys_audit_delete
+  summary: Query Deleted Record Audit records.
+  operation_category: read
+  use_cases:
+  - Deleted Record Audit lookup, extraction, reporting, and validation
+  permissions:
+  - sys_audit_delete read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id089
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id090
+  id: table-create-sys-audit-delete
+  method: POST
+  path: /api/now/table/sys_audit_delete
+  summary: Create a Deleted Record Audit record.
+  operation_category: write
+  use_cases:
+  - Deleted Record Audit creation and integration writes
+  permissions:
+  - sys_audit_delete create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id089
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id090
+  id: table-read-sys-audit-delete
+  method: GET
+  path: /api/now/table/sys_audit_delete/{sysId}
+  summary: Read one Deleted Record Audit record by sys_id.
+  operation_category: read
+  use_cases:
+  - Deleted Record Audit record lookup and validation
+  permissions:
+  - sys_audit_delete read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id089
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id090
+  id: table-update-sys-audit-delete
+  method: PATCH
+  path: /api/now/table/sys_audit_delete/{sysId}
+  summary: Update one Deleted Record Audit record by sys_id.
+  operation_category: write
+  use_cases:
+  - Deleted Record Audit selective updates and backfills
+  permissions:
+  - sys_audit_delete write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id089
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id090
+  id: table-delete-sys-audit-delete
+  method: DELETE
+  path: /api/now/table/sys_audit_delete/{sysId}
+  summary: Delete one Deleted Record Audit record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Deleted Record Audit cleanup where permitted
+  permissions:
+  - sys_audit_delete delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id091
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id092
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_choice_set'
+  id: table-query-sys-choice-set
+  method: GET
+  path: /api/now/table/sys_choice_set
+  summary: Query Choice Set records.
+  operation_category: read
+  use_cases:
+  - Choice Set lookup, extraction, reporting, and validation
+  permissions:
+  - sys_choice_set read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id091
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id092
+  id: table-create-sys-choice-set
+  method: POST
+  path: /api/now/table/sys_choice_set
+  summary: Create a Choice Set record.
+  operation_category: write
+  use_cases:
+  - Choice Set creation and integration writes
+  permissions:
+  - sys_choice_set create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id091
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id092
+  id: table-read-sys-choice-set
+  method: GET
+  path: /api/now/table/sys_choice_set/{sysId}
+  summary: Read one Choice Set record by sys_id.
+  operation_category: read
+  use_cases:
+  - Choice Set record lookup and validation
+  permissions:
+  - sys_choice_set read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id091
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id092
+  id: table-update-sys-choice-set
+  method: PATCH
+  path: /api/now/table/sys_choice_set/{sysId}
+  summary: Update one Choice Set record by sys_id.
+  operation_category: write
+  use_cases:
+  - Choice Set selective updates and backfills
+  permissions:
+  - sys_choice_set write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id091
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id092
+  id: table-delete-sys-choice-set
+  method: DELETE
+  path: /api/now/table/sys_choice_set/{sysId}
+  summary: Delete one Choice Set record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Choice Set cleanup where permitted
+  permissions:
+  - sys_choice_set delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id093
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id094
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_db_view'
+  id: table-query-sys-db-view
+  method: GET
+  path: /api/now/table/sys_db_view
+  summary: Query Database View records.
+  operation_category: read
+  use_cases:
+  - Database View lookup, extraction, reporting, and validation
+  permissions:
+  - sys_db_view read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id093
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id094
+  id: table-create-sys-db-view
+  method: POST
+  path: /api/now/table/sys_db_view
+  summary: Create a Database View record.
+  operation_category: write
+  use_cases:
+  - Database View creation and integration writes
+  permissions:
+  - sys_db_view create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id093
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id094
+  id: table-read-sys-db-view
+  method: GET
+  path: /api/now/table/sys_db_view/{sysId}
+  summary: Read one Database View record by sys_id.
+  operation_category: read
+  use_cases:
+  - Database View record lookup and validation
+  permissions:
+  - sys_db_view read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id093
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id094
+  id: table-update-sys-db-view
+  method: PATCH
+  path: /api/now/table/sys_db_view/{sysId}
+  summary: Update one Database View record by sys_id.
+  operation_category: write
+  use_cases:
+  - Database View selective updates and backfills
+  permissions:
+  - sys_db_view write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id093
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id094
+  id: table-delete-sys-db-view
+  method: DELETE
+  path: /api/now/table/sys_db_view/{sysId}
+  summary: Delete one Database View record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Database View cleanup where permitted
+  permissions:
+  - sys_db_view delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id095
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id096
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_documentation'
+  id: table-query-sys-documentation
+  method: GET
+  path: /api/now/table/sys_documentation
+  summary: Query Field Documentation records.
+  operation_category: read
+  use_cases:
+  - Field Documentation lookup, extraction, reporting, and validation
+  permissions:
+  - sys_documentation read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id095
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id096
+  id: table-create-sys-documentation
+  method: POST
+  path: /api/now/table/sys_documentation
+  summary: Create a Field Documentation record.
+  operation_category: write
+  use_cases:
+  - Field Documentation creation and integration writes
+  permissions:
+  - sys_documentation create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id095
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id096
+  id: table-read-sys-documentation
+  method: GET
+  path: /api/now/table/sys_documentation/{sysId}
+  summary: Read one Field Documentation record by sys_id.
+  operation_category: read
+  use_cases:
+  - Field Documentation record lookup and validation
+  permissions:
+  - sys_documentation read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id095
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id096
+  id: table-update-sys-documentation
+  method: PATCH
+  path: /api/now/table/sys_documentation/{sysId}
+  summary: Update one Field Documentation record by sys_id.
+  operation_category: write
+  use_cases:
+  - Field Documentation selective updates and backfills
+  permissions:
+  - sys_documentation write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id095
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id096
+  id: table-delete-sys-documentation
+  method: DELETE
+  path: /api/now/table/sys_documentation/{sysId}
+  summary: Delete one Field Documentation record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Field Documentation cleanup where permitted
+  permissions:
+  - sys_documentation delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id097
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id098
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_email'
+  id: table-query-sys-email
+  method: GET
+  path: /api/now/table/sys_email
+  summary: Query Email records.
+  operation_category: read
+  use_cases:
+  - Email lookup, extraction, reporting, and validation
+  permissions:
+  - sys_email read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id097
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id098
+  id: table-create-sys-email
+  method: POST
+  path: /api/now/table/sys_email
+  summary: Create a Email record.
+  operation_category: write
+  use_cases:
+  - Email creation and integration writes
+  permissions:
+  - sys_email create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id097
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id098
+  id: table-read-sys-email
+  method: GET
+  path: /api/now/table/sys_email/{sysId}
+  summary: Read one Email record by sys_id.
+  operation_category: read
+  use_cases:
+  - Email record lookup and validation
+  permissions:
+  - sys_email read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id097
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id098
+  id: table-update-sys-email
+  method: PATCH
+  path: /api/now/table/sys_email/{sysId}
+  summary: Update one Email record by sys_id.
+  operation_category: write
+  use_cases:
+  - Email selective updates and backfills
+  permissions:
+  - sys_email write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id097
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id098
+  id: table-delete-sys-email
+  method: DELETE
+  path: /api/now/table/sys_email/{sysId}
+  summary: Delete one Email record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Email cleanup where permitted
+  permissions:
+  - sys_email delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id099
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id100
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_email_log'
+  id: table-query-sys-email-log
+  method: GET
+  path: /api/now/table/sys_email_log
+  summary: Query Email Log records.
+  operation_category: read
+  use_cases:
+  - Email Log lookup, extraction, reporting, and validation
+  permissions:
+  - sys_email_log read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id099
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id100
+  id: table-create-sys-email-log
+  method: POST
+  path: /api/now/table/sys_email_log
+  summary: Create a Email Log record.
+  operation_category: write
+  use_cases:
+  - Email Log creation and integration writes
+  permissions:
+  - sys_email_log create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id099
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id100
+  id: table-read-sys-email-log
+  method: GET
+  path: /api/now/table/sys_email_log/{sysId}
+  summary: Read one Email Log record by sys_id.
+  operation_category: read
+  use_cases:
+  - Email Log record lookup and validation
+  permissions:
+  - sys_email_log read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id099
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id100
+  id: table-update-sys-email-log
+  method: PATCH
+  path: /api/now/table/sys_email_log/{sysId}
+  summary: Update one Email Log record by sys_id.
+  operation_category: write
+  use_cases:
+  - Email Log selective updates and backfills
+  permissions:
+  - sys_email_log write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id099
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id100
+  id: table-delete-sys-email-log
+  method: DELETE
+  path: /api/now/table/sys_email_log/{sysId}
+  summary: Delete one Email Log record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Email Log cleanup where permitted
+  permissions:
+  - sys_email_log delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id101
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id102
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_group_has_role'
+  id: table-query-sys-group-has-role
+  method: GET
+  path: /api/now/table/sys_group_has_role
+  summary: Query Group Role Assignment records.
+  operation_category: read
+  use_cases:
+  - Group Role Assignment lookup, extraction, reporting, and validation
+  permissions:
+  - sys_group_has_role read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id101
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id102
+  id: table-create-sys-group-has-role
+  method: POST
+  path: /api/now/table/sys_group_has_role
+  summary: Create a Group Role Assignment record.
+  operation_category: write
+  use_cases:
+  - Group Role Assignment creation and integration writes
+  permissions:
+  - sys_group_has_role create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id101
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id102
+  id: table-read-sys-group-has-role
+  method: GET
+  path: /api/now/table/sys_group_has_role/{sysId}
+  summary: Read one Group Role Assignment record by sys_id.
+  operation_category: read
+  use_cases:
+  - Group Role Assignment record lookup and validation
+  permissions:
+  - sys_group_has_role read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id101
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id102
+  id: table-update-sys-group-has-role
+  method: PATCH
+  path: /api/now/table/sys_group_has_role/{sysId}
+  summary: Update one Group Role Assignment record by sys_id.
+  operation_category: write
+  use_cases:
+  - Group Role Assignment selective updates and backfills
+  permissions:
+  - sys_group_has_role write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id101
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id102
+  id: table-delete-sys-group-has-role
+  method: DELETE
+  path: /api/now/table/sys_group_has_role/{sysId}
+  summary: Delete one Group Role Assignment record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Group Role Assignment cleanup where permitted
+  permissions:
+  - sys_group_has_role delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id103
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id104
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_history_line'
+  id: table-query-sys-history-line
+  method: GET
+  path: /api/now/table/sys_history_line
+  summary: Query History Line records.
+  operation_category: read
+  use_cases:
+  - History Line lookup, extraction, reporting, and validation
+  permissions:
+  - sys_history_line read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id103
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id104
+  id: table-create-sys-history-line
+  method: POST
+  path: /api/now/table/sys_history_line
+  summary: Create a History Line record.
+  operation_category: write
+  use_cases:
+  - History Line creation and integration writes
+  permissions:
+  - sys_history_line create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id103
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id104
+  id: table-read-sys-history-line
+  method: GET
+  path: /api/now/table/sys_history_line/{sysId}
+  summary: Read one History Line record by sys_id.
+  operation_category: read
+  use_cases:
+  - History Line record lookup and validation
+  permissions:
+  - sys_history_line read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id103
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id104
+  id: table-update-sys-history-line
+  method: PATCH
+  path: /api/now/table/sys_history_line/{sysId}
+  summary: Update one History Line record by sys_id.
+  operation_category: write
+  use_cases:
+  - History Line selective updates and backfills
+  permissions:
+  - sys_history_line write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id103
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id104
+  id: table-delete-sys-history-line
+  method: DELETE
+  path: /api/now/table/sys_history_line/{sysId}
+  summary: Delete one History Line record by sys_id.
+  operation_category: delete
+  use_cases:
+  - History Line cleanup where permitted
+  permissions:
+  - sys_history_line delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id105
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id106
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_history_set'
+  id: table-query-sys-history-set
+  method: GET
+  path: /api/now/table/sys_history_set
+  summary: Query History Set records.
+  operation_category: read
+  use_cases:
+  - History Set lookup, extraction, reporting, and validation
+  permissions:
+  - sys_history_set read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id105
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id106
+  id: table-create-sys-history-set
+  method: POST
+  path: /api/now/table/sys_history_set
+  summary: Create a History Set record.
+  operation_category: write
+  use_cases:
+  - History Set creation and integration writes
+  permissions:
+  - sys_history_set create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id105
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id106
+  id: table-read-sys-history-set
+  method: GET
+  path: /api/now/table/sys_history_set/{sysId}
+  summary: Read one History Set record by sys_id.
+  operation_category: read
+  use_cases:
+  - History Set record lookup and validation
+  permissions:
+  - sys_history_set read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id105
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id106
+  id: table-update-sys-history-set
+  method: PATCH
+  path: /api/now/table/sys_history_set/{sysId}
+  summary: Update one History Set record by sys_id.
+  operation_category: write
+  use_cases:
+  - History Set selective updates and backfills
+  permissions:
+  - sys_history_set write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id105
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id106
+  id: table-delete-sys-history-set
+  method: DELETE
+  path: /api/now/table/sys_history_set/{sysId}
+  summary: Delete one History Set record by sys_id.
+  operation_category: delete
+  use_cases:
+  - History Set cleanup where permitted
+  permissions:
+  - sys_history_set delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id107
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id108
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_metadata'
+  id: table-query-sys-metadata
+  method: GET
+  path: /api/now/table/sys_metadata
+  summary: Query Metadata records.
+  operation_category: read
+  use_cases:
+  - Metadata lookup, extraction, reporting, and validation
+  permissions:
+  - sys_metadata read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id107
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id108
+  id: table-create-sys-metadata
+  method: POST
+  path: /api/now/table/sys_metadata
+  summary: Create a Metadata record.
+  operation_category: write
+  use_cases:
+  - Metadata creation and integration writes
+  permissions:
+  - sys_metadata create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id107
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id108
+  id: table-read-sys-metadata
+  method: GET
+  path: /api/now/table/sys_metadata/{sysId}
+  summary: Read one Metadata record by sys_id.
+  operation_category: read
+  use_cases:
+  - Metadata record lookup and validation
+  permissions:
+  - sys_metadata read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id107
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id108
+  id: table-update-sys-metadata
+  method: PATCH
+  path: /api/now/table/sys_metadata/{sysId}
+  summary: Update one Metadata record by sys_id.
+  operation_category: write
+  use_cases:
+  - Metadata selective updates and backfills
+  permissions:
+  - sys_metadata write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id107
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id108
+  id: table-delete-sys-metadata
+  method: DELETE
+  path: /api/now/table/sys_metadata/{sysId}
+  summary: Delete one Metadata record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Metadata cleanup where permitted
+  permissions:
+  - sys_metadata delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id109
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id110
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_properties'
+  id: table-query-sys-properties
+  method: GET
+  path: /api/now/table/sys_properties
+  summary: Query System Property records.
+  operation_category: read
+  use_cases:
+  - System Property lookup, extraction, reporting, and validation
+  permissions:
+  - sys_properties read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id109
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id110
+  id: table-create-sys-properties
+  method: POST
+  path: /api/now/table/sys_properties
+  summary: Create a System Property record.
+  operation_category: write
+  use_cases:
+  - System Property creation and integration writes
+  permissions:
+  - sys_properties create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id109
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id110
+  id: table-read-sys-properties
+  method: GET
+  path: /api/now/table/sys_properties/{sysId}
+  summary: Read one System Property record by sys_id.
+  operation_category: read
+  use_cases:
+  - System Property record lookup and validation
+  permissions:
+  - sys_properties read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id109
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id110
+  id: table-update-sys-properties
+  method: PATCH
+  path: /api/now/table/sys_properties/{sysId}
+  summary: Update one System Property record by sys_id.
+  operation_category: write
+  use_cases:
+  - System Property selective updates and backfills
+  permissions:
+  - sys_properties write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id109
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id110
+  id: table-delete-sys-properties
+  method: DELETE
+  path: /api/now/table/sys_properties/{sysId}
+  summary: Delete one System Property record by sys_id.
+  operation_category: delete
+  use_cases:
+  - System Property cleanup where permitted
+  permissions:
+  - sys_properties delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id111
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id112
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_security_acl'
+  id: table-query-sys-security-acl
+  method: GET
+  path: /api/now/table/sys_security_acl
+  summary: Query Access Control records.
+  operation_category: read
+  use_cases:
+  - Access Control lookup, extraction, reporting, and validation
+  permissions:
+  - sys_security_acl read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id111
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id112
+  id: table-create-sys-security-acl
+  method: POST
+  path: /api/now/table/sys_security_acl
+  summary: Create a Access Control record.
+  operation_category: write
+  use_cases:
+  - Access Control creation and integration writes
+  permissions:
+  - sys_security_acl create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id111
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id112
+  id: table-read-sys-security-acl
+  method: GET
+  path: /api/now/table/sys_security_acl/{sysId}
+  summary: Read one Access Control record by sys_id.
+  operation_category: read
+  use_cases:
+  - Access Control record lookup and validation
+  permissions:
+  - sys_security_acl read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id111
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id112
+  id: table-update-sys-security-acl
+  method: PATCH
+  path: /api/now/table/sys_security_acl/{sysId}
+  summary: Update one Access Control record by sys_id.
+  operation_category: write
+  use_cases:
+  - Access Control selective updates and backfills
+  permissions:
+  - sys_security_acl write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id111
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id112
+  id: table-delete-sys-security-acl
+  method: DELETE
+  path: /api/now/table/sys_security_acl/{sysId}
+  summary: Delete one Access Control record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Access Control cleanup where permitted
+  permissions:
+  - sys_security_acl delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id113
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id114
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_ui_action'
+  id: table-query-sys-ui-action
+  method: GET
+  path: /api/now/table/sys_ui_action
+  summary: Query UI Action records.
+  operation_category: read
+  use_cases:
+  - UI Action lookup, extraction, reporting, and validation
+  permissions:
+  - sys_ui_action read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id113
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id114
+  id: table-create-sys-ui-action
+  method: POST
+  path: /api/now/table/sys_ui_action
+  summary: Create a UI Action record.
+  operation_category: write
+  use_cases:
+  - UI Action creation and integration writes
+  permissions:
+  - sys_ui_action create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id113
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id114
+  id: table-read-sys-ui-action
+  method: GET
+  path: /api/now/table/sys_ui_action/{sysId}
+  summary: Read one UI Action record by sys_id.
+  operation_category: read
+  use_cases:
+  - UI Action record lookup and validation
+  permissions:
+  - sys_ui_action read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id113
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id114
+  id: table-update-sys-ui-action
+  method: PATCH
+  path: /api/now/table/sys_ui_action/{sysId}
+  summary: Update one UI Action record by sys_id.
+  operation_category: write
+  use_cases:
+  - UI Action selective updates and backfills
+  permissions:
+  - sys_ui_action write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id113
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id114
+  id: table-delete-sys-ui-action
+  method: DELETE
+  path: /api/now/table/sys_ui_action/{sysId}
+  summary: Delete one UI Action record by sys_id.
+  operation_category: delete
+  use_cases:
+  - UI Action cleanup where permitted
+  permissions:
+  - sys_ui_action delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id115
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id116
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_ui_form'
+  id: table-query-sys-ui-form
+  method: GET
+  path: /api/now/table/sys_ui_form
+  summary: Query Form records.
+  operation_category: read
+  use_cases:
+  - Form lookup, extraction, reporting, and validation
+  permissions:
+  - sys_ui_form read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id115
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id116
+  id: table-create-sys-ui-form
+  method: POST
+  path: /api/now/table/sys_ui_form
+  summary: Create a Form record.
+  operation_category: write
+  use_cases:
+  - Form creation and integration writes
+  permissions:
+  - sys_ui_form create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id115
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id116
+  id: table-read-sys-ui-form
+  method: GET
+  path: /api/now/table/sys_ui_form/{sysId}
+  summary: Read one Form record by sys_id.
+  operation_category: read
+  use_cases:
+  - Form record lookup and validation
+  permissions:
+  - sys_ui_form read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id115
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id116
+  id: table-update-sys-ui-form
+  method: PATCH
+  path: /api/now/table/sys_ui_form/{sysId}
+  summary: Update one Form record by sys_id.
+  operation_category: write
+  use_cases:
+  - Form selective updates and backfills
+  permissions:
+  - sys_ui_form write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id115
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id116
+  id: table-delete-sys-ui-form
+  method: DELETE
+  path: /api/now/table/sys_ui_form/{sysId}
+  summary: Delete one Form record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Form cleanup where permitted
+  permissions:
+  - sys_ui_form delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id117
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id118
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_ui_list'
+  id: table-query-sys-ui-list
+  method: GET
+  path: /api/now/table/sys_ui_list
+  summary: Query List Layout records.
+  operation_category: read
+  use_cases:
+  - List Layout lookup, extraction, reporting, and validation
+  permissions:
+  - sys_ui_list read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id117
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id118
+  id: table-create-sys-ui-list
+  method: POST
+  path: /api/now/table/sys_ui_list
+  summary: Create a List Layout record.
+  operation_category: write
+  use_cases:
+  - List Layout creation and integration writes
+  permissions:
+  - sys_ui_list create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id117
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id118
+  id: table-read-sys-ui-list
+  method: GET
+  path: /api/now/table/sys_ui_list/{sysId}
+  summary: Read one List Layout record by sys_id.
+  operation_category: read
+  use_cases:
+  - List Layout record lookup and validation
+  permissions:
+  - sys_ui_list read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id117
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id118
+  id: table-update-sys-ui-list
+  method: PATCH
+  path: /api/now/table/sys_ui_list/{sysId}
+  summary: Update one List Layout record by sys_id.
+  operation_category: write
+  use_cases:
+  - List Layout selective updates and backfills
+  permissions:
+  - sys_ui_list write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id117
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id118
+  id: table-delete-sys-ui-list
+  method: DELETE
+  path: /api/now/table/sys_ui_list/{sysId}
+  summary: Delete one List Layout record by sys_id.
+  operation_category: delete
+  use_cases:
+  - List Layout cleanup where permitted
+  permissions:
+  - sys_ui_list delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id119
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id120
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_ui_policy'
+  id: table-query-sys-ui-policy
+  method: GET
+  path: /api/now/table/sys_ui_policy
+  summary: Query UI Policy records.
+  operation_category: read
+  use_cases:
+  - UI Policy lookup, extraction, reporting, and validation
+  permissions:
+  - sys_ui_policy read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id119
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id120
+  id: table-create-sys-ui-policy
+  method: POST
+  path: /api/now/table/sys_ui_policy
+  summary: Create a UI Policy record.
+  operation_category: write
+  use_cases:
+  - UI Policy creation and integration writes
+  permissions:
+  - sys_ui_policy create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id119
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id120
+  id: table-read-sys-ui-policy
+  method: GET
+  path: /api/now/table/sys_ui_policy/{sysId}
+  summary: Read one UI Policy record by sys_id.
+  operation_category: read
+  use_cases:
+  - UI Policy record lookup and validation
+  permissions:
+  - sys_ui_policy read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id119
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id120
+  id: table-update-sys-ui-policy
+  method: PATCH
+  path: /api/now/table/sys_ui_policy/{sysId}
+  summary: Update one UI Policy record by sys_id.
+  operation_category: write
+  use_cases:
+  - UI Policy selective updates and backfills
+  permissions:
+  - sys_ui_policy write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id119
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id120
+  id: table-delete-sys-ui-policy
+  method: DELETE
+  path: /api/now/table/sys_ui_policy/{sysId}
+  summary: Delete one UI Policy record by sys_id.
+  operation_category: delete
+  use_cases:
+  - UI Policy cleanup where permitted
+  permissions:
+  - sys_ui_policy delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id121
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id122
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_update_set'
+  id: table-query-sys-update-set
+  method: GET
+  path: /api/now/table/sys_update_set
+  summary: Query Update Set records.
+  operation_category: read
+  use_cases:
+  - Update Set lookup, extraction, reporting, and validation
+  permissions:
+  - sys_update_set read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id121
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id122
+  id: table-create-sys-update-set
+  method: POST
+  path: /api/now/table/sys_update_set
+  summary: Create a Update Set record.
+  operation_category: write
+  use_cases:
+  - Update Set creation and integration writes
+  permissions:
+  - sys_update_set create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id121
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id122
+  id: table-read-sys-update-set
+  method: GET
+  path: /api/now/table/sys_update_set/{sysId}
+  summary: Read one Update Set record by sys_id.
+  operation_category: read
+  use_cases:
+  - Update Set record lookup and validation
+  permissions:
+  - sys_update_set read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id121
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id122
+  id: table-update-sys-update-set
+  method: PATCH
+  path: /api/now/table/sys_update_set/{sysId}
+  summary: Update one Update Set record by sys_id.
+  operation_category: write
+  use_cases:
+  - Update Set selective updates and backfills
+  permissions:
+  - sys_update_set write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id121
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id122
+  id: table-delete-sys-update-set
+  method: DELETE
+  path: /api/now/table/sys_update_set/{sysId}
+  summary: Delete one Update Set record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Update Set cleanup where permitted
+  permissions:
+  - sys_update_set delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id123
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id124
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_update_xml'
+  id: table-query-sys-update-xml
+  method: GET
+  path: /api/now/table/sys_update_xml
+  summary: Query Customer Update records.
+  operation_category: read
+  use_cases:
+  - Customer Update lookup, extraction, reporting, and validation
+  permissions:
+  - sys_update_xml read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id123
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id124
+  id: table-create-sys-update-xml
+  method: POST
+  path: /api/now/table/sys_update_xml
+  summary: Create a Customer Update record.
+  operation_category: write
+  use_cases:
+  - Customer Update creation and integration writes
+  permissions:
+  - sys_update_xml create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id123
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id124
+  id: table-read-sys-update-xml
+  method: GET
+  path: /api/now/table/sys_update_xml/{sysId}
+  summary: Read one Customer Update record by sys_id.
+  operation_category: read
+  use_cases:
+  - Customer Update record lookup and validation
+  permissions:
+  - sys_update_xml read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id123
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id124
+  id: table-update-sys-update-xml
+  method: PATCH
+  path: /api/now/table/sys_update_xml/{sysId}
+  summary: Update one Customer Update record by sys_id.
+  operation_category: write
+  use_cases:
+  - Customer Update selective updates and backfills
+  permissions:
+  - sys_update_xml write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id123
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id124
+  id: table-delete-sys-update-xml
+  method: DELETE
+  path: /api/now/table/sys_update_xml/{sysId}
+  summary: Delete one Customer Update record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Customer Update cleanup where permitted
+  permissions:
+  - sys_update_xml delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id125
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id126
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_user_delegate'
+  id: table-query-sys-user-delegate
+  method: GET
+  path: /api/now/table/sys_user_delegate
+  summary: Query User Delegate records.
+  operation_category: read
+  use_cases:
+  - User Delegate lookup, extraction, reporting, and validation
+  permissions:
+  - sys_user_delegate read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id125
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id126
+  id: table-create-sys-user-delegate
+  method: POST
+  path: /api/now/table/sys_user_delegate
+  summary: Create a User Delegate record.
+  operation_category: write
+  use_cases:
+  - User Delegate creation and integration writes
+  permissions:
+  - sys_user_delegate create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id125
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id126
+  id: table-read-sys-user-delegate
+  method: GET
+  path: /api/now/table/sys_user_delegate/{sysId}
+  summary: Read one User Delegate record by sys_id.
+  operation_category: read
+  use_cases:
+  - User Delegate record lookup and validation
+  permissions:
+  - sys_user_delegate read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id125
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id126
+  id: table-update-sys-user-delegate
+  method: PATCH
+  path: /api/now/table/sys_user_delegate/{sysId}
+  summary: Update one User Delegate record by sys_id.
+  operation_category: write
+  use_cases:
+  - User Delegate selective updates and backfills
+  permissions:
+  - sys_user_delegate write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id125
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id126
+  id: table-delete-sys-user-delegate
+  method: DELETE
+  path: /api/now/table/sys_user_delegate/{sysId}
+  summary: Delete one User Delegate record by sys_id.
+  operation_category: delete
+  use_cases:
+  - User Delegate cleanup where permitted
+  permissions:
+  - sys_user_delegate delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id127
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id128
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_user_preference'
+  id: table-query-sys-user-preference
+  method: GET
+  path: /api/now/table/sys_user_preference
+  summary: Query User Preference records.
+  operation_category: read
+  use_cases:
+  - User Preference lookup, extraction, reporting, and validation
+  permissions:
+  - sys_user_preference read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id127
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id128
+  id: table-create-sys-user-preference
+  method: POST
+  path: /api/now/table/sys_user_preference
+  summary: Create a User Preference record.
+  operation_category: write
+  use_cases:
+  - User Preference creation and integration writes
+  permissions:
+  - sys_user_preference create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id127
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id128
+  id: table-read-sys-user-preference
+  method: GET
+  path: /api/now/table/sys_user_preference/{sysId}
+  summary: Read one User Preference record by sys_id.
+  operation_category: read
+  use_cases:
+  - User Preference record lookup and validation
+  permissions:
+  - sys_user_preference read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id127
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id128
+  id: table-update-sys-user-preference
+  method: PATCH
+  path: /api/now/table/sys_user_preference/{sysId}
+  summary: Update one User Preference record by sys_id.
+  operation_category: write
+  use_cases:
+  - User Preference selective updates and backfills
+  permissions:
+  - sys_user_preference write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id127
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id128
+  id: table-delete-sys-user-preference
+  method: DELETE
+  path: /api/now/table/sys_user_preference/{sysId}
+  summary: Delete one User Preference record by sys_id.
+  operation_category: delete
+  use_cases:
+  - User Preference cleanup where permitted
+  permissions:
+  - sys_user_preference delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id129
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id130
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sys_user_token'
+  id: table-query-sys-user-token
+  method: GET
+  path: /api/now/table/sys_user_token
+  summary: Query User Token records.
+  operation_category: read
+  use_cases:
+  - User Token lookup, extraction, reporting, and validation
+  permissions:
+  - sys_user_token read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id129
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id130
+  id: table-create-sys-user-token
+  method: POST
+  path: /api/now/table/sys_user_token
+  summary: Create a User Token record.
+  operation_category: write
+  use_cases:
+  - User Token creation and integration writes
+  permissions:
+  - sys_user_token create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id129
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id130
+  id: table-read-sys-user-token
+  method: GET
+  path: /api/now/table/sys_user_token/{sysId}
+  summary: Read one User Token record by sys_id.
+  operation_category: read
+  use_cases:
+  - User Token record lookup and validation
+  permissions:
+  - sys_user_token read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id129
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id130
+  id: table-update-sys-user-token
+  method: PATCH
+  path: /api/now/table/sys_user_token/{sysId}
+  summary: Update one User Token record by sys_id.
+  operation_category: write
+  use_cases:
+  - User Token selective updates and backfills
+  permissions:
+  - sys_user_token write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id129
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id130
+  id: table-delete-sys-user-token
+  method: DELETE
+  path: /api/now/table/sys_user_token/{sysId}
+  summary: Delete one User Token record by sys_id.
+  operation_category: delete
+  use_cases:
+  - User Token cleanup where permitted
+  permissions:
+  - sys_user_token delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id131
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id132
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sysapproval_approver'
+  id: table-query-sysapproval-approver
+  method: GET
+  path: /api/now/table/sysapproval_approver
+  summary: Query Approval records.
+  operation_category: read
+  use_cases:
+  - Approval lookup, extraction, reporting, and validation
+  permissions:
+  - sysapproval_approver read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id131
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id132
+  id: table-create-sysapproval-approver
+  method: POST
+  path: /api/now/table/sysapproval_approver
+  summary: Create a Approval record.
+  operation_category: write
+  use_cases:
+  - Approval creation and integration writes
+  permissions:
+  - sysapproval_approver create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id131
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id132
+  id: table-read-sysapproval-approver
+  method: GET
+  path: /api/now/table/sysapproval_approver/{sysId}
+  summary: Read one Approval record by sys_id.
+  operation_category: read
+  use_cases:
+  - Approval record lookup and validation
+  permissions:
+  - sysapproval_approver read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id131
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id132
+  id: table-update-sysapproval-approver
+  method: PATCH
+  path: /api/now/table/sysapproval_approver/{sysId}
+  summary: Update one Approval record by sys_id.
+  operation_category: write
+  use_cases:
+  - Approval selective updates and backfills
+  permissions:
+  - sysapproval_approver write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id131
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id132
+  id: table-delete-sysapproval-approver
+  method: DELETE
+  path: /api/now/table/sysapproval_approver/{sysId}
+  summary: Delete one Approval record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Approval cleanup where permitted
+  permissions:
+  - sysapproval_approver delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id133
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id134
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: sysapproval_group'
+  id: table-query-sysapproval-group
+  method: GET
+  path: /api/now/table/sysapproval_group
+  summary: Query Approval Group records.
+  operation_category: read
+  use_cases:
+  - Approval Group lookup, extraction, reporting, and validation
+  permissions:
+  - sysapproval_group read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id133
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id134
+  id: table-create-sysapproval-group
+  method: POST
+  path: /api/now/table/sysapproval_group
+  summary: Create a Approval Group record.
+  operation_category: write
+  use_cases:
+  - Approval Group creation and integration writes
+  permissions:
+  - sysapproval_group create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id133
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id134
+  id: table-read-sysapproval-group
+  method: GET
+  path: /api/now/table/sysapproval_group/{sysId}
+  summary: Read one Approval Group record by sys_id.
+  operation_category: read
+  use_cases:
+  - Approval Group record lookup and validation
+  permissions:
+  - sysapproval_group read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id133
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id134
+  id: table-update-sysapproval-group
+  method: PATCH
+  path: /api/now/table/sysapproval_group/{sysId}
+  summary: Update one Approval Group record by sys_id.
+  operation_category: write
+  use_cases:
+  - Approval Group selective updates and backfills
+  permissions:
+  - sysapproval_group write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id133
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id134
+  id: table-delete-sysapproval-group
+  method: DELETE
+  path: /api/now/table/sysapproval_group/{sysId}
+  summary: Delete one Approval Group record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Approval Group cleanup where permitted
+  permissions:
+  - sysapproval_group delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id135
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id136
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: task_ci'
+  id: table-query-task-ci
+  method: GET
+  path: /api/now/table/task_ci
+  summary: Query Task CI Relationship records.
+  operation_category: read
+  use_cases:
+  - Task CI Relationship lookup, extraction, reporting, and validation
+  permissions:
+  - task_ci read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id135
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id136
+  id: table-create-task-ci
+  method: POST
+  path: /api/now/table/task_ci
+  summary: Create a Task CI Relationship record.
+  operation_category: write
+  use_cases:
+  - Task CI Relationship creation and integration writes
+  permissions:
+  - task_ci create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id135
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id136
+  id: table-read-task-ci
+  method: GET
+  path: /api/now/table/task_ci/{sysId}
+  summary: Read one Task CI Relationship record by sys_id.
+  operation_category: read
+  use_cases:
+  - Task CI Relationship record lookup and validation
+  permissions:
+  - task_ci read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id135
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id136
+  id: table-update-task-ci
+  method: PATCH
+  path: /api/now/table/task_ci/{sysId}
+  summary: Update one Task CI Relationship record by sys_id.
+  operation_category: write
+  use_cases:
+  - Task CI Relationship selective updates and backfills
+  permissions:
+  - task_ci write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id135
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id136
+  id: table-delete-task-ci
+  method: DELETE
+  path: /api/now/table/task_ci/{sysId}
+  summary: Delete one Task CI Relationship record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Task CI Relationship cleanup where permitted
+  permissions:
+  - task_ci delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id137
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id138
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: task_sla'
+  id: table-query-task-sla
+  method: GET
+  path: /api/now/table/task_sla
+  summary: Query Task SLA records.
+  operation_category: read
+  use_cases:
+  - Task SLA lookup, extraction, reporting, and validation
+  permissions:
+  - task_sla read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id137
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id138
+  id: table-create-task-sla
+  method: POST
+  path: /api/now/table/task_sla
+  summary: Create a Task SLA record.
+  operation_category: write
+  use_cases:
+  - Task SLA creation and integration writes
+  permissions:
+  - task_sla create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id137
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id138
+  id: table-read-task-sla
+  method: GET
+  path: /api/now/table/task_sla/{sysId}
+  summary: Read one Task SLA record by sys_id.
+  operation_category: read
+  use_cases:
+  - Task SLA record lookup and validation
+  permissions:
+  - task_sla read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id137
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id138
+  id: table-update-task-sla
+  method: PATCH
+  path: /api/now/table/task_sla/{sysId}
+  summary: Update one Task SLA record by sys_id.
+  operation_category: write
+  use_cases:
+  - Task SLA selective updates and backfills
+  permissions:
+  - task_sla write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id137
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id138
+  id: table-delete-task-sla
+  method: DELETE
+  path: /api/now/table/task_sla/{sysId}
+  summary: Delete one Task SLA record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Task SLA cleanup where permitted
+  permissions:
+  - task_sla delete ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: &id139
+    types:
+    - basic
+    - oauth_2_0
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: &id140
+  - Concrete alias for the documented ServiceNow Table API.
+  - 'Table: u_task'
+  id: table-query-u-task
+  method: GET
+  path: /api/now/table/u_task
+  summary: Query Custom Task Pattern records.
+  operation_category: read
+  use_cases:
+  - Custom Task Pattern lookup, extraction, reporting, and validation
+  permissions:
+  - u_task read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id139
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id140
+  id: table-create-u-task
+  method: POST
+  path: /api/now/table/u_task
+  summary: Create a Custom Task Pattern record.
+  operation_category: write
+  use_cases:
+  - Custom Task Pattern creation and integration writes
+  permissions:
+  - u_task create ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id139
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id140
+  id: table-read-u-task
+  method: GET
+  path: /api/now/table/u_task/{sysId}
+  summary: Read one Custom Task Pattern record by sys_id.
+  operation_category: read
+  use_cases:
+  - Custom Task Pattern record lookup and validation
+  permissions:
+  - u_task read ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id139
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id140
+  id: table-update-u-task
+  method: PATCH
+  path: /api/now/table/u_task/{sysId}
+  summary: Update one Custom Task Pattern record by sys_id.
+  operation_category: write
+  use_cases:
+  - Custom Task Pattern selective updates and backfills
+  permissions:
+  - u_task write ACL
+- status: reviewed
+  api_group: Common Table API Alias
+  auth: *id139
+  official_doc_url: https://developer.servicenow.com/dev.do#!/reference/api
+  notes: *id140
+  id: table-delete-u-task
+  method: DELETE
+  path: /api/now/table/u_task/{sysId}
+  summary: Delete one Custom Task Pattern record by sys_id.
+  operation_category: delete
+  use_cases:
+  - Custom Task Pattern cleanup where permitted
+  permissions:
+  - u_task delete ACL

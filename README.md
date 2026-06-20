@@ -34,6 +34,7 @@ catalog/
     README.md
     all-endpoints.csv
   servicenow-core-platform.yml
+  servicenow-common-tables.yml
 examples/
   requests/
   responses/
@@ -63,9 +64,18 @@ ServiceNow does not have a single static public OpenAPI file that represents eve
 For that reason, this repository has two layers:
 
 - `catalog/servicenow-core-platform.yml`: curated core endpoint families and high-value table aliases.
+- `catalog/servicenow-common-tables.yml`: concrete Table API aliases for common platform/application tables.
 - Instance-generated catalogs: produced from a real instance using `tools/generate_table_catalog_from_instance.py`.
 
 Use `catalog/indexes/all-endpoints.csv` for spreadsheet review and filtering.
+
+Current committed coverage:
+
+| Catalog | Endpoints |
+| --- | ---: |
+| Core platform endpoint families | 46 |
+| Common table aliases | 350 |
+| **Total** | **396** |
 
 ## Generate A Real Instance Table Catalog
 
@@ -80,6 +90,13 @@ python tools/export_catalog_indexes.py
 ```
 
 This produces `catalog/servicenow-instance-tables.yml`, which is the correct way to expand beyond the curated core list.
+
+## Regenerate Common Table Aliases
+
+```bash
+python tools/generate_common_table_catalog.py
+python tools/export_catalog_indexes.py
+```
 
 ## Status Values
 
